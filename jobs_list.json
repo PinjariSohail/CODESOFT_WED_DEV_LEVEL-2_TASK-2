@@ -30,18 +30,6 @@
         "category": "design"
     },
     {
-        "title": "DevOps Engineer",
-        "company": "Netflix",
-        "location": "Los Gatos, CA",
-        "category": "engineering"
-    },
-    {
-        "title": "Mobile App Developer",
-        "company": "Uber",
-        "location": "San Francisco, CA",
-        "category": "engineering"
-    },
-    {
         "title": "System Administrator",
         "company": "IBM",
         "location": "Armonk, NY",
@@ -56,17 +44,7 @@
     {
         "title": "Cloud Architect",
         "company": "Oracle",
-        "location": "Redwood City, CA",
-        "category": "engineering"
-    },
-    {
-        "title": "Security Analyst",
-        "company": "Symantec",
-        "location": "Mountain View, CA",
-        "category": "support"
-    },
-    {
-        "title": "Full Stack Developer",
+        "location": "Redwoo
         "company": "Salesforce",
         "location": "San Francisco, CA",
         "category": "engineering"
@@ -86,19 +64,6 @@
     {
         "title": "Business Analyst",
         "company": "Intel",
-        "location": "Santa Clara, CA",
-        "category": "management"
-    },
-    {
-        "title": "Machine Learning Engineer",
-        "company": "Nvidia",
-        "location": "Santa Clara, CA",
-        "category": "data-science"
-    },
-    {
-        "title": "IT Project Manager",
-        "company": "HP",
-        "location": "Palo Alto, CA",
         "category": "management"
     },
     {
@@ -126,18 +91,7 @@
         "category": "data-science"
     },
     {
-        "title": "IT Consultant",
-        "company": "Accenture",
-        "location": "New York, NY",
-        "category": "consulting"
-    },
-    {
-        "title": "Penetration Tester",
-        "company": "Amazon",
-        "location": "Seattle, WA",
-        "category": "engineering"
-    },
-    {
+        "title": "IT Co]
         "title": "Big Data Engineer",
         "company": "Microsoft",
         "location": "Redmond, WA",
@@ -158,15 +112,7 @@
     {
         "title": "Cloud Security Engineer",
         "company": "Salesforce",
-        "location": "San Francisco, CA",
-        "category": "engineering"
-    },
-    {
-        "title": "Embedded Systems Engineer",
-        "company": "Tesla",
-        "location": "Palo Alto, CA",
-        "category": "engineering"
-    },
+        "location": "Sa
     {
         "title": "Robotics Engineer",
         "company": "Boston Dynamics",
@@ -175,23 +121,7 @@
     },
     {
         "title": "Game Developer",
-        "company": "Electronic Arts",
-        "location": "Redwood City, CA",
-        "category": "engineering"
-    },
-    {
-        "title": "Cloud Operations Engineer",
-        "company": "Amazon Web Services",
-        "location": "Seattle, WA",
-        "category": "engineering"
-    },
-    {
-        "title": "Data Analyst",
-        "company": "Twitter",
-        "location": "San Francisco, CA",
-        "category": "data-science"
-    },
-    {
+        "company": "E]
         "title": "Systems Engineer",
         "company": "Cisco",
         "location": "San Jose, CA",
@@ -216,22 +146,7 @@
         "category": "data-science"
     },
     {
-        "title": "Java Developer",
-        "company": "Oracle",
-        "location": "Redwood City, CA",
-        "category": "engineering"
-    },
-    {
-        "title": "Software Development Engineer",
-        "company": "Google",
-        "location": "Mountain View, CA",
-        "category": "engineering"
-    },
-    {
-        "title": "Senior Data Engineer",
-        "company": "LinkedIn",
-        "location": "Sunnyvale, CA",
-        "category": "data-science"
+        "title": "Jav
     },
     {
         "title": "Web Designer",
@@ -248,19 +163,7 @@
     {
         "title": "AI Engineer",
         "company": "DeepMind",
-        "location": "London, UK",
-        "category": "engineering"
-    },
-    {
-        "title": "Frontend Developer",
-        "company": "Shopify",
-        "location": "Toronto, ON",
-        "category": "engineering"
-    },
-    {
-        "title": "Backend Developer",
-        "company": "Stripe",
-        "location": "San Francisco, CA",
+        "location": "Lon
         "category": "engineering"
     },
     {
@@ -293,14 +196,6 @@
         "location": "Chicago, IL",
         "category": "consulting"
     },
-    {
-        "title": "IT Support Specialist",
-        "company": "Zendesk",
-        "location": "San Francisco, CA",
-        "category": "support"
-    },
-    {
-        "title": "Technical Project Manager",
         "company": "Google",
         "location": "Mountain View, CA",
         "category": "management"
@@ -315,26 +210,14 @@
         "title": "Cloud Consultant",
         "company": "Salesforce",
         "location": "San Francisco, CA",
-        "category": "consulting"
-    },
-    {
-        "title": "QA Tester",
-        "company": "HP",
-        "location": "Palo Alto, CA",
-        "category": "engineering"
-    },
-    {
+        "category":]
         "title": "Integration Specialist",
         "company": "SAP",
         "location": "Newtown Square, PA",
         "category": "consulting"
     },
     {
-        "title": "Application Support Analyst",
-        "company": "Dell",
-        "location": "Round Rock, TX",
-        "category": "support"
-    },
+        "title": "
     {
         "title": "IoT Engineer",
         "company": "Tesla",
