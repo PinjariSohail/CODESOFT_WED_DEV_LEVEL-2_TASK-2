@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="static/" />
+    <title>Job Application</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #8a9faf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        cursor:default;
+      }
+
+      .container {
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 20px 20px 60px #e0dddd94, -20px -20px 60px #e0dddd94;
+        padding: 40px;
+        width: 800px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .form-group i {
+        margin-right: 10px;
+        color: #3498db;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"] {
+        width: 100%;
+        padding: 15px;
+        border-radius: 10px;
+        border: none;
+        background: #f5f5f5;
+        box-shadow: inset 5px 5px 10px #d9d9d9, inset -5px -5px 10px #ffffff;
+        font-size: 16px;
+      }
+
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      input[type="tel"]:focus {
+        outline: none;
+        box-shadow: inset 2px 2px 5px #d9d9d9, inset -2px -2px 5px #ffffff;
+      }
+
+      input[type="file"] {
+        display: none;
+      }
+
+      .file-upload-label {
+        background: #3498db;
+        color: #fff;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s;
+        box-shadow: 5px 5px 10px #00000096, -5px -5px 10px #ffffff;
+      }
+
+      .file-upload-label:hover {
+        background: #2980b9;
+      }
+
+      button {
+        background: #3498db;
+        color: #fff;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background 0.3s;
+        box-shadow: 5px 5px 10px #00000096, -5px -5px 10px #ffffff;
+        margin-top: 3%;
+      }
+
+      button:hover {
+        background: #2980b9;
+      }
+
+      #job-selected {
+        margin-bottom: 20px;
+        padding: 15px;
+        background: #e3f2fd;
+        border-radius: 10px;
+        font-size: 16px;
+      }
+
+      #resume-preview {
+        margin-top: -10px;
+        font-size: 14px;
+        color: #333;
+      }
+
+      #resume-name,
+      #resume-size {
+        display: block;
+        margin-top: 5px;
+      }
+
+      #resume-name {
+        font-weight: bold;
+      }
+
+      #resume-size {
+        font-style: italic;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Job Application</h2>
+      <div id="job-selected">Loading selected job details...</div>
+      <form id="jobApplicationForm" enctype="multipart/form-data">
+        <input type="hidden" id="jobId" name="jobId" value="">
+        <input type="hidden" name="jobTitle" id="jobTitle">
+        <input type="hidden" name="jobCompany" id="jobCompany">
+
+        <div class="form-group"> <i class="fas fa-user"></i>
+          <input type="text" id="fullName" name="fullName" placeholder="Full Name" required />
+        </div>
+        <div class="form-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" id="email" name="email" placeholder="Email Address" required />
+        </div>
+        <div class="form-group">
+          <i class="fas fa-phone"></i>
+          <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required />
+        </div>
+        <div class="form-group">
+          <i class="fas fa-link"></i>
+          <input type="text" id="portfolioLink" name="portfolioLink" placeholder="Portfolio Link" />
+        </div>
+        <div class="form-group">
+          <i class="fas fa-file-alt"></i>
+          <textarea
+            id="interestAndQualifications"
+            name="interestAndQualifications" 
+            placeholder="Explain why you’re interested in the job, your qualifications, and how do they align with the company's needs"
+            style="height: 150px"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <i class="fas fa-question-circle"></i>
+          <textarea
+            id="jobRelatedQuestions"
+            name="jobRelatedQuestions"
+            placeholder="Job-Related Questions (e.g., experience with specific tasks or technologies)"
+            style="height: 150px"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <i class="fas fa-map-marker-alt"></i>
+          <input type="text" id="address" name="address" placeholder="Address" required />
+        </div>
+        <div class="form-group">
+          <i class="fas fa-file-upload"></i>
+          <input type="file" id="resume-upload" name="resume-upload" accept=".pdf,.doc,.docx" />
+          <label for="resume-upload" class="file-upload-label">Upload Resume</label>
+        </div>
+        <div class="form-group"> <div id="resume-preview" style="display: none">
+            <i class="fas fa-file-alt"></i>
+            <span id="resume-name"></span> <span id="resume-size"></span>
+          </div> </div>
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+
+    <script>
+      async function fetchSelectedJob() {
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const jobId = urlParams.get("job_id");
+
+        if (jobId) {
+          console.log("Fetching job details for job ID:", jobId);
+          try {
+            const response = await fetch(`/get-job-details?job_id=${jobId}`);
+            console.log("Response received:", response);
+            if (!response.ok) {
+              throw new Error(
+                `Network response was not ok (status: ${response.status})`
+              );
+            }
+            const job = await response.json();
+            console.log("Parsed job data:", job);
+
+            if (job.error) {
+              document.getElementById("job-selected").innerText = job.error;
+            } else {
+              document.getElementById(
+                "job-selected"
+              ).innerText = `Applying for: ${job.jobTitle} at ${job.companyName}`;
+              document.getElementById('jobId').value = jobId;
+              selectedJobTitle = job.jobTitle;
+              selectedJobCompany = job.companyName;
+              document.getElementById('jobTitle').value = selectedJobTitle;
+              document.getElementById('jobCompany').value = selectedJobCompany;
+            }
+          } catch (error) {
+            console.error("Error fetching job details:", error);
+            document.getElementById("job-selected").innerText =
+              "Error loading job details.";
+          }
+        } else {
+          document.getElementById("job-selected").innerText =
+            "No job selected.";
+        }
+      }
+      fetchSelectedJob();
+    </script>
+
+    <script>
+      let selectedJobTitle = null;
+      let selectedJobCompany = null;
+      function getJobTitleFromUrl() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get("title");
+      }
+
+      function displayJobDetailsfromJSON() {
+        const jobTitle = getJobTitleFromUrl();
+        fetch("static/jobs_details.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const job = data.find((j) => j.title === jobTitle);
+            if (job) {
+              document.getElementById(
+                "job-selected"
+              ).innerText = `Applying for: ${job.title} at ${job.company}`;
+
+              selectedJobTitle = job.title;
+              selectedJobCompany = job.company;
+              document.getElementById('jobTitle').value = selectedJobTitle;
+              document.getElementById('jobCompany').value = selectedJobCompany;
+            } else {
+              document.getElementById("job-selected").innerText =
+                "Job not found.";
+            }
+          })
+          .catch((error) =>
+            console.error("Error fetching job details:", error)
+          );
+      }
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const jobTitle = urlParams.get("title");
+
+      if (jobTitle) {
+        displayJobDetailsfromJSON();
+      } else {
+        document.getElementById("job-selected").innerText = "No job selected.";
+      }
+
+      const resumeUpload = document.getElementById("resume-upload");
+      const resumePreview = document.getElementById("resume-preview");
+      const resumeName = document.getElementById("resume-name");
+      const resumeSize = document.getElementById("resume-size");
+
+      resumeUpload.addEventListener("change", (event) => {
+        const file = event.target.files[0];
+
+        if (file) {
+          resumeName.textContent = file.name;
+          resumeSize.textContent = `(${formatBytes(file.size)})`;
+          resumePreview.style.display = "block";
+        } else {
+          resumePreview.style.display = "none";
+        }
+      });
+
+      function formatBytes(bytes, decimals = 2) {
+        if (bytes === 0) return "0 Bytes";
+
+        const k = 1024;
+        const dm = decimals < 0 ? 0 : decimals;
+        const sizes = ["Bytes", "KB", "MB", "GB", "TB"];
+
+        const i = Math.floor(Math.log(bytes) / Math.log(k));
+
+        return (
+          parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + " " + sizes[i]
+        );
+      }
+    </script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const jobApplicationForm = document.getElementById('jobApplicationForm');
+  
+  jobApplicationForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+  
+    const formData = new FormData(jobApplicationForm);
+    console.log(formData);
+  
+    try {
+          const response = await fetch('/submit-application', {
+            method: 'POST',
+            body: formData
+          });
+
+          if (response.ok) {
+            alert('Application submitted successfully!');
+          } else {
+            alert('Error submitting application. Please try again later.');
+          }
+        } catch (error) {
+          console.error('Error submitting application:', error);
+          alert('Error submitting application. Please try again later.');
+        }
+      });
+    });
+  </script>
+  </body>
+</html>

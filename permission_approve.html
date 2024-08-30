@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="static/looka.com_editor_192053877(Asus Zenbook Fold)-modified.png" />
+    <title>Permission Approve</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #121212;
+        color: #eee;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      .table-container {
+        width: 90%;
+        max-height: 400px;
+        overflow: auto;
+        margin-top: 20px;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        min-width: 1500px;
+      }
+
+      .table-container::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+
+      .table-container::-webkit-scrollbar-track {
+        background: #121212;
+      }
+
+      .table-container::-webkit-scrollbar-thumb {
+        background: rgb(165, 8, 8);
+        border-radius: 6px;
+      }
+
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #333;
+        word-wrap: break-word;
+      }
+
+      th {
+        background-color: #222;
+      }
+
+      tr:hover {
+        background-color: #2a2a2a;
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5) inset;
+        transform: translateY(-2px);
+        transition: all 0.2s ease-in-out;
+      }
+
+      a {
+        color: #f00;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .select-btn {
+        background: rgb(212, 200, 200);
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(255, 0, 212, 0.747);
+        transition: background 0.3s ease;
+      }
+
+      .select-btn.selected {
+        background: #f00;
+      }
+
+      .send-email-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #f00;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
+        transition: background 0.3s ease;
+      }
+
+      .send-email-btn:hover {
+        background-color: #d00;
+      }
+
+      #cursor {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: linear-gradient(to right, #690d0d, #fd0000);
+        position: fixed;
+        pointer-events: none;
+        z-index: 9999;
+        transition: transform 0.1s ease;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <h1>Job Applications</h1>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>ID</th>
+            <th>Job Title</th>
+            <th>Company</th>
+            <th>JobId</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Portfolio Link</th>
+            <th>Interest and Qualifications</th>
+            <th>Job Related Questions</th>
+            <th>Resume</th>
+          </tr>
+        </thead>
+        <tbody id="applicationsTableBody">
+          <!-- Data will be dynamically inserted here -->
+        </tbody>
+      </table>
+    </div>
+    <button class="send-email-btn" id="sendEmailBtn">Send Email</button>
+    <!--<span class="select-btn" data-id="${idString}" data-applicant-name="${application.fullName}" data-job-title="${application.jobTitle}"></span>-->
+
+    <script>
+      console.log("Script is running");
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("DOM fully loaded and parsed");
+        fetch("/get-applications")
+          .then((response) => {
+            console.log("Response received");
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            console.log("Data fetched:", data);
+            const tableBody = document.getElementById("applicationsTableBody");
+            data.forEach((application) => {
+              const idString = application._id.toString();
+              const row = document.createElement("tr");
+
+              row.innerHTML = `
+            <td><span class="select-btn" data-id="${idString}" data-applicant-name="${application.fullName}" data-job-title="${application.jobTitle}"></span></td>
+              <td>${idString}</td>
+              <td>${application.jobTitle}</td>
+              <td>${application.jobCompany}</td>
+              <td>${application.jobId}</td>
+              <td>${application.fullName}</td>
+              <td>${application.email}</td>
+              <td>${application.phoneNumber}</td>
+              <td><a href="${application.portfolioLink}" target="_blank">Portfolio</a></td>
+              <td>${application.interestAndQualifications}</td>
+              <td>${application.jobRelatedQuestions}</td>
+              <td><a href="/uploads/${application.resumeFileName}" download>Download Resume</a></td>
+            `;
+
+              tableBody.appendChild(row);
+            });
+          })
+          .catch((error) => {
+            console.error("Error fetching applications:", error);
+          });
+      });
+
+      document.getElementById("sendEmailBtn").addEventListener("click", () => {
+        const selectedRows = document.querySelectorAll(".select-btn.selected");
+        if (selectedRows.length === 0) {
+          alert("No applications selected.");
+          return;
+        }
+
+        selectedRows.forEach((btn) => {
+          const id = btn.getAttribute("data-id");
+          const applicantName = btn.getAttribute("data-applicant-name");
+          const jobTitle = btn.getAttribute("data-job-title");
+
+          console.log(
+            "Sending email for application ID:",
+            id,
+            "Applicant:",
+            applicantName,
+            "Job:",
+            jobTitle
+          );
+
+          fetch("/send-email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ id, applicantName, jobTitle }),
+          })
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("Network response was not ok");
+              }
+              return response.text();
+            })
+            .then((data) => {
+              console.log("Email sent successfully:", data);
+            })
+            .catch((error) => {
+              console.error("Error sending email:", error);
+            });
+
+          btn.classList.remove("selected");
+        });
+
+        alert("Email(s) sent successfully.");
+      });
+
+      document.addEventListener("click", (event) => {
+        if (event.target.classList.contains("select-btn")) {
+          event.target.classList.toggle("selected");
+        }
+      });
+
+      const cursor = document.getElementById("cursor");
+      let mouseX = 0,
+        mouseY = 0;
+      let currentX = 0,
+        currentY = 0;
+      const speed = 0.1;
+
+      document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+
+      function updateCursor() {
+        currentX += (mouseX - currentX) * speed;
+        currentY += (mouseY - currentY) * speed;
+        cursor.style.left = `${currentX}px`;
+        cursor.style.top = `${currentY}px`;
+        requestAnimationFrame(updateCursor);
+      }
+
+      requestAnimationFrame(updateCursor);
+    </script>
+  </body>
+</html>

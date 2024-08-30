@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="static/"
+    />
+    <title>Job Board</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background: #8a9fafa2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 20px 20px 60px #d9d9d98a, -20px -20px 60px #d9d9d98a;
+        padding: 40px;
+        max-width: 1000px;
+        width: 100%;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        background: #000000;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 2em;
+        font-weight: bold;
+      }
+
+      .filters {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+
+      select,
+      input[type="search"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: inset 5px 5px 10px #44444442, inset -5px -5px 10px #ffffff;
+        font-size: 1em;
+        outline: none;
+      }
+
+      select:focus,
+      input[type="search"]:focus {
+        box-shadow: 5px 5px 10px #00000083, -5px -5px 10px #00000022;
+      }
+
+      .job-listing {
+        background: #f0f0f0;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #00000085, -5px -5px 10px #02020230;
+        padding: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        display: block;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .job-listing:hover {
+        transform: translateY(-5px);
+        box-shadow: 10px 10px 20px #080808, -10px -10px 20px #0a0a0a;
+      }
+
+      .job-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #1f1f1f;
+      }
+
+      .job-details {
+        margin-top: 10px;
+        color: #000000e3;
+      }
+
+      .job-details i {
+        margin-right: 5px;
+      }
+
+      .job-listing::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background: linear-gradient(
+          45deg,
+          #ff0000c8,
+          #002aff8d,
+          #00ffd5,
+          #ff0000aa
+        );
+        background-size: 400% 400%;
+        animation: glow 5s ease infinite;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+        z-index: -1;
+      }
+
+      .job-listing:hover::before {
+        opacity: 0.3;
+      }
+
+      @keyframes glow {
+        0% {
+          background-position: 0% 50%;
+        }
+
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      
+
+      .logo-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        animation: rotate 5s linear infinite;
+      }
+
+      .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(251, 255, 254, 0.596);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+        display: none;
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .job-listing:hover {
+        transform: translateY(-5px);
+        box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+
+      .job-listing:hover .job-title {
+        color: #000000;
+      }
+
+      .job-listing:hover {
+        transform: translateY(-5px) scale(1.02);
+      }
+
+      .pstyel {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 10px;
+        background: linear-gradient(45deg, #9abaffb0, #c4d5fa, #c4d5fa);
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1),
+          -5px -5px 15px rgba(255, 255, 255, 0.5);
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5em;
+        color: #333;
+      }
+
+      .pstyel p {
+        margin: 0;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .pstyel p strong {
+        background: linear-gradient(45deg, #000000e4, #c50a0ac6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+      }
+
+      @keyframes textGlow {
+        0% {
+          text-shadow: 2px 2px 4px rgb(127, 121, 121);
+        }
+        100% {
+          text-shadow: 2px 2px 20px rgb(0, 0, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading-overlay">
+      <img
+        src="static/newloder.png"
+        alt="Rounded Logo Icon"
+        class="logo-icon"
+      />
+    </div>
+    <div class="container">
+      <div id="cursor"></div>
+      <h1>Job Listings</h1>
+      <div class="filters">
+        <select id="job-category" onchange="filterJobs()">
+          <option value="all">All Categories</option>
+          <option value="engineering">Engineering</option>
+          <option value="data-science">Data Science</option>
+          <option value="design">Design</option>
+          <option value="management">Management</option>
+          <option value="support">Support</option>
+        </select>
+        <input
+          type="search"
+          id="job-search"
+          oninput="searchJobs()"
+          placeholder="Search job titles..."
+        />
+      </div>
+      <div class="pstyel">
+        <p><strong>Select a job among them...</strong></p>
+      </div>
+      <div id="job-listings">
+        <!-- Job listings will be dynamically loaded here -->
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll(".invention img");
+        const colorThief = new ColorThief();
+
+        images.forEach((img) => {
+          if (img.complete) {
+            applyTransparentBackground(img);
+          } else {
+            img.addEventListener("load", function () {
+              applyTransparentBackground(img);
+            });
+          }
+        });
+
+        function applyTransparentBackground(img) {
+          const dominantColor = colorThief.getColor(img);
+          const rgbaColor = `rgba(${dominantColor[0]}, ${dominantColor[1]}, ${dominantColor[2]}, 0.5)`;
+          img.style.backgroundColor = rgbaColor;
+        }
+      });
+    </script>
+    <script>
+      let listingsData = [];
+      let detailsData = [];
+
+      Promise.all([
+        fetch("static/jobs_list.json").then((response) => response.json()),
+        fetch("static/jobs_details.json").then((response) => response.json()),
+      ])
+        .then(([listings, details]) => {
+          listingsData = listings;
+          detailsData = details;
+          displayJobListings();
+        })
+        .catch((error) => console.error("Error fetching job data:", error));
+
+      function displayJobListings() {
+        const jobListingsContainer = document.getElementById("job-listings");
+
+        listingsData.forEach((listing) => {
+          const details = detailsData.find(
+            (detail) => detail.title === listing.title
+          );
+
+          const jobListing = document.createElement("a");
+          jobListing.href = `/company-job-details?title=${listing.title}`;
+          jobListing.classList.add("job-listing");
+
+          jobListing.dataset.category = listing.category || "general";
+
+          jobListing.innerHTML = `
+            <div class="job-title">${listing.title}</div>
+            <div class="job-details"><i class="fas fa-building"></i> ${listing.company}</div>
+            <div class="job-details"><i class="fas fa-map-marker-alt"></i> ${listing.location}</div>
+          `;
+
+          jobListing.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            const loadingOverlay = document.querySelector(".loading-overlay");
+            loadingOverlay.style.display = "flex";
+
+            setTimeout(() => {
+              window.location.href = jobListing.href;
+            }, 2000);
+          });
+
+          jobListingsContainer.appendChild(jobListing);
+        });
+      }
+    </script>
+    <script>
+      function filterJobs() {
+        const category = document.getElementById("job-category").value;
+        const jobs = document.querySelectorAll(".job-listing");
+        jobs.forEach((job) => {
+          if (category === "all" || job.dataset.category === category) {
+            job.style.display = "block";
+          } else {
+            job.style.display = "none";
+          }
+        });
+      }
+
+      function searchJobs() {
+        const searchQuery = document
+          .getElementById("job-search")
+          .value.toLowerCase();
+        const jobs = document.querySelectorAll(".job-listing");
+        jobs.forEach((job) => {
+          const title = job
+            .querySelector(".job-title")
+            .textContent.toLowerCase();
+          if (title.includes(searchQuery)) {
+            job.style.display = "block";
+          } else {
+            job.style.display = "none";
+          }
+        });
+      }
+
+      const cursor = document.getElementById("cursor");
+      let mouseX = 0,
+        mouseY = 0;
+      let currentX = 0,
+        currentY = 0;
+      const speed = 0.1;
+
+      document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+
+      function updateCursor() {
+        currentX += (mouseX - currentX) * speed;
+        currentY += (mouseY - currentY) * speed;
+        cursor.style.left = `${currentX}px`;
+        cursor.style.top = `${currentY}px`;
+        requestAnimationFrame(updateCursor);
+      }
+
+      requestAnimationFrame(updateCursor);
+    </script>
+  </body>
+</html>

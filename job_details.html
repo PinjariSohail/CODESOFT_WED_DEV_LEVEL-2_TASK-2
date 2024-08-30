@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="static/"
+    />
+    <title>Job Details</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background: #8a9fafcd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 20px 20px 60px #d9d9d970, -20px -20px 60px #d9d9d970;
+        padding: 40px;
+        max-width: 1000px;
+        width: 100%;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        background: #000000;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 2em;
+        font-weight: bold;
+      }
+
+      .job-listing {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .job-title {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #272727;
+        margin-bottom: 20px;
+      }
+
+      .job-details {
+        margin-top: 10px;
+        color: #3f3f3f;
+      }
+
+      .job-details i {
+        margin-right: 5px;
+      }
+
+      .job-description {
+        margin-top: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      .apply-button {
+        display: inline-block;
+        padding: 15px 25px;
+        background: linear-gradient(45deg, #007bff, #04b7dbdf);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 20px;
+        text-decoration: none;
+      }
+
+      .apply-button:hover {
+        background: linear-gradient(45deg, #0056b3, #00aaff);
+      }
+
+      .back-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #cccccc;
+        color: #333;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        margin-top: 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .back-button:hover {
+        background: #4664aa;
+        color:#ffffff
+      }
+
+      .arrow-button {
+        display: inline-block;
+        padding: 5px 10px;
+        background: #cccccc;
+        color: #333;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        margin-top: 20px;
+        text-decoration: none;
+        text-align: center;
+        margin-right: 10px;
+      }
+
+      .arrow-button:hover {
+        background: #4664aa;
+        color:#ffffff
+      }
+
+      .arrow-button.disabled {
+        cursor: default;
+        pointer-events: 0;
+        opacity: 0.5;
+      }
+
+      .logo-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        animation: rotate 5s linear infinite;
+      }
+
+      .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(251, 255, 254, 0.596);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+        display: none;
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="loading-overlay">
+      <img
+        src="static/newloder.png"
+        alt="Rounded Logo Icon"
+        class="logo-icon"
+      />
+    </div>
+    <div class="container">
+      <div id="cursor"></div>
+      <h1>Job Details</h1>
+      <div id="job-details-container">
+        <!-- Job details will be dynamically loaded here -->
+      </div>
+
+      <button id="prev-job" class="arrow-button disabled">< Previous</button>
+      <button id="next-job" class="arrow-button">Next ></button>
+      <a href="/company-job-listings" class="back-button">Back to Job Board</a>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll(".invention img");
+        const colorThief = new ColorThief();
+
+        images.forEach((img) => {
+          if (img.complete) {
+            applyTransparentBackground(img);
+          } else {
+            img.addEventListener("load", function () {
+              applyTransparentBackground(img);
+            });
+          }
+        });
+
+        function applyTransparentBackground(img) {
+          const dominantColor = colorThief.getColor(img);
+          const rgbaColor = `rgba(${dominantColor[0]}, ${dominantColor[1]}, ${dominantColor[2]}, 0.5)`;
+          img.style.backgroundColor = rgbaColor;
+        }
+      });
+    </script>
+    <script>
+      const jobDetailsContainer = document.getElementById(
+        "job-details-container"
+      );
+      const prevButton = document.getElementById("prev-job");
+      const nextButton = document.getElementById("next-job");
+
+      let jobsData = [];
+      let currentJobIndex = 0;
+
+      function showLoadingOverlay() {
+        const loadingOverlay = document.querySelector(".loading-overlay");
+        loadingOverlay.style.display = "flex";
+
+        setTimeout(() => {
+          loadingOverlay.style.display = "none";
+        }, 2000);
+      }
+
+      function getJobTitleFromUrl() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get("title");
+      }
+
+      fetch("static/jobs_details.json")
+        .then((response) => response.json())
+        .then((data) => {
+          jobsData = data;
+
+          if (jobsData.length > 0) {
+            const jobTitleFromUrl = getJobTitleFromUrl();
+
+            if (jobTitleFromUrl) {
+              loadJobDetails(jobTitleFromUrl);
+            } else {
+              currentJobIndex = 0;
+              loadJobDetails(jobsData[currentJobIndex].title);
+            }
+          } else {
+            jobDetailsContainer.innerHTML = "<p>No jobs found.</p>";
+          }
+        })
+        .catch((error) => console.error("Error fetching job data:", error));
+
+      function loadJobDetails(jobTitle) {
+        const job = jobsData.find((job) => job.title === jobTitle);
+
+        if (job) {
+          jobDetailsContainer.innerHTML = `
+          <div class="job-listing">
+            <div class="job-title">${job.title}</div>
+            <div class="job-details"><i class="fas fa-building"></i> ${
+              job.company
+            }</div>
+            <div class="job-details"><i class="fas fa-map-marker-alt"></i> ${
+              job.location
+            }</div>
+            <div class="job-details"><i class="fas fa-calendar-alt"></i> Posted on: ${
+              job.posted
+            }</div>
+            <div class="job-details"><i class="fas fa-dollar-sign"></i> Salary: ${
+              job.salary
+            }</div>
+            <div class="job-description">
+              <p>${job.description}</p>
+              <p><strong>Responsibilities:</strong></p>
+              <ul>
+                ${job.responsibilities
+                  .map((responsibility) => `<li>${responsibility}</li>`)
+                  .join("")}
+              </ul>
+              <p><strong>Requirements:</strong></p>
+              <ul>
+                ${job.requirements
+                  .map((requirement) => `<li>${requirement}</li>`)
+                  .join("")}
+              </ul>
+            </div>
+            <a href="/job_app" class="apply-button">Apply Now</a>
+          </div>
+        `;
+          currentJobIndex = jobsData.indexOf(job);
+          updateNavigationButtons();
+        } else {
+          jobDetailsContainer.innerHTML = "<p>Job not found.</p>";
+        }
+      }
+      function updateNavigationButtons() {
+        if (currentJobIndex === 0) {
+          prevButton.disabled = true;
+          prevButton.classList.add("disabled");
+        } else {
+          prevButton.disabled = false;
+          prevButton.classList.remove("disabled");
+        }
+
+        if (currentJobIndex === jobsData.length - 1) {
+          nextButton.disabled = true;
+          nextButton.classList.add("disabled");
+        } else {
+          nextButton.disabled = false;
+          nextButton.classList.remove("disabled");
+        }
+      }
+
+      function showNextJob() {
+        if (currentJobIndex < jobsData.length - 1) {
+          currentJobIndex++;
+          loadJobDetails(jobsData[currentJobIndex].title);
+          updateNavigationButtons();
+        }
+      }
+
+      function showPreviousJob() {
+        if (currentJobIndex > 0) {
+          currentJobIndex--;
+          loadJobDetails(jobsData[currentJobIndex].title);
+          updateNavigationButtons();
+        }
+      }
+
+      prevButton.addEventListener("click", () => {
+        showLoadingOverlay();
+        setTimeout(showPreviousJob, 2000);
+      });
+
+      nextButton.addEventListener("click", () => {
+        showLoadingOverlay();
+        setTimeout(showNextJob, 2000);
+      });
+
+      const backButton = document.querySelector(".back-button");
+      backButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        showLoadingOverlay();
+
+        setTimeout(() => {
+          window.location.href = "/company-job-listings";
+        }, 1900);
+      });
+
+      jobDetailsContainer.addEventListener("click", (event) => {
+        if (event.target.classList.contains("apply-button")) {
+          event.preventDefault();
+          showLoadingOverlay();
+          // const jobId = event.target.getAttribute('href').split('=')[1];
+          const jobTitle = getJobTitleFromUrl();
+
+          setTimeout(() => {
+         if (jobTitle) {
+        window.location.href = `/job_app?title=${jobTitle}`;
+      } else {
+        console.error("Error: No job ID or title found.");
+        window.location.href = `/job_app`;
+      }
+          }, 1900);
+        }
+      });
+
+      const cursor = document.getElementById("cursor");
+      let mouseX = 0,
+        mouseY = 0;
+      let currentX = 0,
+        currentY = 0;
+      const speed = 0.1;
+
+      document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+
+      function updateCursor() {
+        currentX += (mouseX - currentX) * speed;
+        currentY += (mouseY - currentY) * speed;
+        cursor.style.left = `${currentX}px`;
+        cursor.style.top = `${currentY}px`;
+        requestAnimationFrame(updateCursor);
+      }
+
+      requestAnimationFrame(updateCursor);
+    </script>
+  </body>
+</html>

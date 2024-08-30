@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="static/" />
+  <title>Candidate Dashboard</title>
+
+  <style>
+    body {
+      background-color: #556bb38f;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .dashboard-container {
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 7px 7px 15px #2a2a2bc9, -7px -7px 15px #ffffffc9;
+      padding: 40px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .profile-picture {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 5px 5px 10px #494b4fd8, -5px -5px 10px #ffffffc0;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .options {
+      margin-top: 30px;
+    }
+
+    .options button {
+      background-color: #29388b;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 3px 3px 8px #4c5578, -3px -3px 8px #ffffffd2;
+      font-size: 14px;
+      color: #ffffff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .options button:hover {
+      box-shadow: inset 3px 3px 8px #babecca8, inset -3px -3px 8px #ffffffbd;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <img src="/static/profile-1.png" alt="Profile Picture" class="profile-picture">
+    <h1 id="candidate-name">Welcome, [Candidate Name]</h1>
+    <p>Here you can manage your profile and apply for jobs.</p>
+
+    <div class="options">
+      <button onclick="window.location.href='/company-job-listings'">Company Job Listings</button>
+      <button onclick="window.location.href='/employee-job-listings'">Employee Job Listings</button>
+    </div>
+  </div>
+
+  <script>
+    fetch('/get-latest-candidate')
+      .then(response => response.json())
+      .then(data => {
+        const candidateNameElement = document.getElementById('candidate-name');
+        candidateNameElement.textContent = `Welcome, ${data.name}`;
+      })
+      .catch(error => console.error('Error fetching candidate name:', error));
+  </script>
+</body>
+</html>

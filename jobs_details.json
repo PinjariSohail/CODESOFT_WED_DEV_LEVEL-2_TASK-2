@@ -1,0 +1,1316 @@
+[
+    {
+        "title": "Software Engineer",
+        "company": "Google",
+        "location": "Mountain View, CA",
+        "posted": "August 1, 2024",
+        "salary": "Salary: $120,000 - $150,000",
+        "category": "general",
+        "description": "As a Software Engineer at Google, you will be responsible for designing, developing, and maintaining software applications. You will work closely with cross-functional teams to deliver high-quality software solutions that meet business requirements.",
+        "responsibilities": [
+            "Develop and maintain software applications.",
+            "Collaborate with product managers, designers, and other engineers.",
+            "Write clean, scalable, and efficient code.",
+            "Participate in code reviews and maintain coding standards.",
+            "Troubleshoot and debug issues."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "3+ years of experience in software development.",
+            "Proficiency in Java, Python, or C++.",
+            "Experience with cloud services (AWS, GCP, Azure).",
+            "Strong problem-solving skills and attention to detail."
+        ]
+    },
+    {
+        "title": "Data Scientist",
+        "company": "Amazon",
+        "location": "Seattle, WA",
+        "posted": "July 22, 2024",
+        "salary": "Salary: $130,000 - $160,000",
+        "category": "general",
+        "description": "As a Data Scientist at Amazon, you will analyze complex data and derive actionable insights to drive the business forward. You will work with large datasets, build predictive models, and discover hidden opportunities.",
+        "responsibilities": [
+            "Analyze and interpret complex datasets to provide actionable insights.",
+            "Build and implement predictive models using machine learning algorithms.",
+            "Collaborate with cross-functional teams to identify business opportunities.",
+            "Present findings to stakeholders with clear data visualizations and reports.",
+            "Ensure data quality and integrity throughout the data pipeline."
+        ],
+        "requirements": [
+            "Ph.D. or Master's in Data Science, Statistics, or related field.",
+            "5+ years of experience in data science or analytics.",
+            "Proficiency in Python, R, and SQL.",
+            "Experience with big data tools like Hadoop, Spark, or similar.",
+            "Strong problem-solving and communication skills."
+        ]
+    },
+    {
+        "title": "Web Developer",
+        "company": "Facebook",
+        "location": "Menlo Park, CA",
+        "posted": "March 1, 2024",
+        "salary": "Salary: $110,000 - $140,000",
+        "category": "general",
+        "description": "As a Web Developer at Facebook, you will be tasked with creating, maintaining, and improving our web applications. You will work closely with other developers, designers, and product managers to ensure our web applications meet business requirements and provide a seamless user experience.",
+        "responsibilities": [
+            "Build and optimize web pages for performance and usability.",
+            "Collaborate with design and product teams to deliver high-quality web applications.",
+            "Write clean, maintainable, and efficient code.",
+            "Participate in code reviews and adhere to coding standards.",
+            "Debug and troubleshoot issues as they arise."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or a related field.",
+            "2+ years of experience in web development.",
+            "Proficiency in HTML, CSS, and JavaScript.",
+            "Experience with React or other front-end frameworks.",
+            "Strong problem-solving skills and attention to detail."
+        ]
+    },
+    {
+        "title": "Product Manager",
+        "company": "Apple",
+        "location": "Cupertino, CA",
+        "posted": "February 15, 2024",
+        "salary": "Salary: $140,000 - $180,000",
+        "category": "general",
+        "description": "As a Product Manager at Apple, you will lead the development and implementation of our product roadmaps. You will work closely with cross-functional teams to ensure products are delivered on time and meet the high-quality standards of Apple.",
+        "responsibilities": [
+            "Define product vision and strategy.",
+            "Lead cross-functional teams to deliver products.",
+            "Conduct market research and analyze data.",
+            "Oversee product lifecycle from concept to launch.",
+            "Collaborate with stakeholders to meet business goals."
+        ],
+        "requirements": [
+            "Bachelor's degree in Business, Engineering, or related field.",
+            "5+ years of experience in product management.",
+            "Strong leadership and communication skills.",
+            "Experience with Agile methodologies.",
+            "Proven track record of successful product launches."
+        ]
+    },
+    {
+        "title": "UI/UX Designer",
+        "company": "Microsoft",
+        "location": "Redmond, WA",
+        "posted": "April 10, 2024",
+        "salary": "Salary: $95,000 - $120,000",
+        "category": "general",
+        "description": "As a UI/UX Designer at Microsoft, you will create beautiful and functional user interfaces for our products. You will work closely with developers, product managers, and other designers to bring the best user experiences to life.",
+        "responsibilities": [
+            "Design user-centered interfaces and prototypes.",
+            "Conduct user research and usability testing.",
+            "Collaborate with cross-functional teams to define user requirements.",
+            "Create and maintain design documentation.",
+            "Ensure designs are consistent with brand guidelines."
+        ],
+        "requirements": [
+            "Bachelor's degree in Design or related field.",
+            "3+ years of experience in UI/UX design.",
+            "Proficiency in design tools like Sketch, Figma, or Adobe XD.",
+            "Strong portfolio demonstrating UX and UI design skills.",
+            "Excellent communication and teamwork skills."
+        ]
+    },
+    {
+        "title": "DevOps Engineer",
+        "company": "Netflix",
+        "location": "Los Gatos, CA",
+        "posted": "May 10, 2024",
+        "salary": "Salary: $130,000 - $160,000",
+        "category": "general",
+        "description": "As a DevOps Engineer at Netflix, you will be responsible for automating and streamlining operations and processes. You will build and maintain tools for deployment, monitoring, and operations, and troubleshoot and resolve issues in our development, test, and production environments.",
+        "responsibilities": [
+            "Develop, configure, and deploy CI/CD pipelines.",
+            "Monitor system performance and reliability.",
+            "Implement and manage infrastructure as code.",
+            "Collaborate with development and IT teams to provide a seamless and high-performing service.",
+            "Troubleshoot and resolve system-related issues."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "4+ years of experience in DevOps or system administration.",
+            "Proficiency with tools like Docker, Kubernetes, Jenkins, and Terraform.",
+            "Strong scripting skills (Python, Bash, etc.).",
+            "Experience with cloud platforms (AWS, GCP, Azure)."
+        ]
+    },
+    {
+        "title": "Mobile App Developer",
+        "company": "Uber",
+        "location": "San Francisco, CA",
+        "posted": "May 11, 2024",
+        "salary": "Salary: $100,000 - $130,000",
+        "category": "general",
+        "description": "As a Mobile App Developer at Uber, you will design, develop, and maintain mobile applications that meet user needs and business requirements. You will work closely with cross-functional teams to create seamless user experiences.",
+        "responsibilities": [
+            "Develop and maintain mobile applications for iOS and Android platforms.",
+            "Collaborate with UI/UX designers and product managers.",
+            "Write clean, efficient, and well-documented code.",
+            "Perform thorough testing and debugging of mobile applications.",
+            "Stay updated with the latest industry trends and technologies."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or a related field.",
+            "2+ years of experience in mobile app development.",
+            "Proficiency in Swift, Java, or Kotlin.",
+            "Experience with RESTful APIs and third-party libraries.",
+            "Strong problem-solving skills and attention to detail."
+        ]
+    },
+    {
+        "title": "System Administrator",
+        "company": "IBM",
+        "location": "Armonk, NY",
+        "posted": "September 15, 2024",
+        "salary": "Salary: $80,000 - $100,000",
+        "category": "general",
+        "description": "As a System Administrator at IBM, you will be responsible for the installation, configuration, and maintenance of system infrastructure. You will ensure the stable operation of the organization's computer networks and systems.",
+        "responsibilities": [
+            "Install and configure software and hardware.",
+            "Manage network servers and technology tools.",
+            "Monitor system performance and ensure security and efficiency of IT infrastructure.",
+            "Troubleshoot issues and outages.",
+            "Upgrade systems with new releases and models."
+        ],
+        "requirements": [
+            "Bachelor's degree in IT, Computer Science, or related field.",
+            "3+ years of experience as a System Administrator.",
+            "Experience with operating systems, such as Windows and Linux.",
+            "Knowledge of network protocols and security configurations.",
+            "Strong problem-solving and communication skills."
+        ]
+    },
+    {
+        "title": "Network Engineer",
+        "company": "Cisco",
+        "location": "San Jose, CA",
+        "posted": "September 1, 2024",
+        "salary": "Salary: $110,000 - $130,000",
+        "category": "general",
+        "description": "As a Network Engineer at Cisco, you will design, implement, and maintain the company's network infrastructure. You will ensure network efficiency and security and resolve any issues that arise.",
+        "responsibilities": [
+            "Design, implement, and maintain network infrastructure.",
+            "Monitor network performance and troubleshoot issues.",
+            "Ensure network security and compliance.",
+            "Collaborate with IT team to enhance network performance.",
+            "Document network designs and configurations."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science, Networks or related field.",
+            "3+ years of experience in network engineering.",
+            "Proficiency in Cisco networking technologies.",
+            "Strong understanding of networking protocols.",
+            "Excellent problem-solving skills."
+        ]
+    },
+    {
+        "title": "Cloud Architect",
+        "company": "Oracle",
+        "location": "Redwood City, CA",
+        "posted": "September 10, 2024",
+        "salary": "Salary: $160,000 - $190,000",
+        "category": "general",
+        "description": "As a Cloud Architect at Oracle, you will be leading the design and implementation of cloud solutions, ensuring they align with business requirements and best practices.",
+        "responsibilities": [
+            "Design and implement scalable cloud architectures.",
+            "Work with cross-functional teams to deploy new cloud-based solutions.",
+            "Ensure security and compliance alignment.",
+            "Optimize cloud infrastructure for cost and performance efficiency.",
+            "Provide guidance and mentorship to engineering teams."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "8+ years of experience in cloud solutions development.",
+            "Proficient with AWS, GCP, or Azure.",
+            "Strong knowledge of cloud security and compliance frameworks.",
+            "Excellent problem-solving and communication skills."
+        ]
+    },
+    {
+        "title": "Security Analyst",
+        "company": "Symantec",
+        "location": "Mountain View, CA",
+        "posted": "April 1, 2024",
+        "salary": "Salary: $90,000 - $120,000",
+        "category": "general",
+        "description": "As a Security Analyst at Symantec, you will be responsible for protecting the company's network systems and data. You will scrutinize security measures, identify vulnerabilities, and develop policies to mitigate risks.",
+        "responsibilities": [
+            "Monitor and analyze network activities for suspicious events.",
+            "Implement and enforce security policies and procedures.",
+            "Perform vulnerability assessment and penetration testing.",
+            "Respond to security breaches and prepare incident reports.",
+            "Collaborate with IT and security teams to deploy security measures."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "2+ years of experience in cybersecurity roles.",
+            "Familiarity with security frameworks such as NIST, ISO27001.",
+            "Strong understanding of firewalls, VPNs, IDS/IPS, and security protocols.",
+            "Relevant certifications (e.g., CISSP, CISM) are a plus."
+        ]
+    },
+    {
+        "title": "Full Stack Developer",
+        "company": "Salesforce",
+        "location": "San Francisco, CA",
+        "posted": "September 10, 2024",
+        "salary": "Salary: $130,000 - $160,000",
+        "category": "general",
+        "description": "As a Full Stack Developer at Salesforce, you will be responsible for developing both frontend and backend components of our applications. You will collaborate with various teams to provide a coherent user experience.",
+        "responsibilities": [
+            "Design and implement frontend and backend architectures.",
+            "Ensure responsiveness and efficiency of applications.",
+            "Collaborate with other developers, designers, and product managers.",
+            "Write clean, maintainable, and scalable code.",
+            "Participate in code reviews and optimize code performance."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "3+ years of experience in full-stack development.",
+            "Proficiency in JavaScript, React, Node.js.",
+            "Experience with RESTful APIs and databases (SQL/NoSQL).",
+            "Strong problem-solving skills and attention to detail."
+        ]
+    },
+    {
+        "title": "QA Engineer",
+        "company": "Adobe",
+        "location": "San Jose, CA",
+        "posted": "August 15, 2024",
+        "salary": "Salary: $90,000 - $120,000",
+        "category": "general",
+        "description": "As a QA Engineer at Adobe, you will play a crucial role in ensuring the quality of our software products. You will design and execute test plans, identify bugs, and collaborate with developers to resolve issues.",
+        "responsibilities": [
+            "Develop and execute test plans and test cases.",
+            "Identify and document software defects.",
+            "Collaborate with developers to resolve bugs and improve software quality.",
+            "Participate in code reviews and provide feedback.",
+            "Stay up-to-date with the latest testing methodologies."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "2+ years of experience in software testing.",
+            "Experience with test automation tools.",
+            "Strong analytical and problem-solving skills.",
+            "Excellent communication and teamwork skills."
+        ]
+    },
+    {
+        "title": "Technical Support Specialist",
+        "company": "Dell",
+        "location": "Round Rock, TX",
+        "posted": "September 2, 2024",
+        "salary": "Salary: $80,000 - $100,000",
+        "category": "general",
+        "description": "As a Technical Support Specialist at Dell, you will provide remote technical support to customers and help them resolve any hardware or software issues. You will ensure a high level of customer satisfaction by delivering fast and effective support.",
+        "responsibilities": [
+            "Respond to customer inquiries and provide technical assistance.",
+            "Troubleshoot and resolve hardware and software problems.",
+            "Maintain accurate records of customer interactions and resolutions.",
+            "Collaborate with other support teams to resolve complex issues.",
+            "Assist in the development and documentation of support processes."
+        ],
+        "requirements": [
+            "Bachelor's degree in Information Technology or related field.",
+            "2+ years of experience in technical support or a related role.",
+            "Excellent communication and problem-solving skills.",
+            "Proficient in various operating systems and hardware troubleshooting.",
+            "Ability to work in a fast-paced environment."
+        ]
+    },
+    {
+        "title": "Business Analyst",
+        "company": "Intel",
+        "location": "Santa Clara, CA",
+        "posted": "April 15, 2023",
+        "salary": "Salary: $90,000 - $110,000",
+        "category": "general",
+        "description": "As a Business Analyst at Intel, you will analyze business processes to identify opportunities for improvement and make data-driven recommendations for change.",
+        "responsibilities": [
+            "Analyze business processes and workflows.",
+            "Gather and document business requirements.",
+            "Identify areas for improvement and propose solutions.",
+            "Collaborate with stakeholders to implement changes.",
+            "Monitor and evaluate the effectiveness of implemented solutions."
+        ],
+        "requirements": [
+            "Bachelor's degree in Business, Economics, or related field.",
+            "3+ years of experience in business analysis or related field.",
+            "Strong analytical and problem-solving skills.",
+            "Excellent communication and interpersonal skills.",
+            "Proficiency in business analysis tools and software."
+        ]
+    },
+    {
+        "title": "Machine Learning Engineer",
+        "company": "Nvidia",
+        "location": "Santa Clara, CA",
+        "posted": "September 12, 2024",
+        "salary": "Salary: $130,000 - $170,000",
+        "category": "general",
+        "description": "As a Machine Learning Engineer at Nvidia, you will develop algorithms and models that drive groundbreaking AI applications. Collaborating with a talented team, you will push the boundaries of machine learning technology.",
+        "responsibilities": [
+            "Design and implement scalable machine learning models.",
+            "Collaborate with cross-functional teams to integrate models into products.",
+            "Develop tools to streamline model training and deployment.",
+            "Analyze data to uncover trends and patterns for model improvement.",
+            "Conduct research to stay up-to-date with the latest developments in machine learning."
+        ],
+        "requirements": [
+            "Master's or Ph.D. in Computer Science or related field.",
+            "3+ years of experience in machine learning.",
+            "Proficiency in Python and machine learning libraries (TensorFlow, PyTorch).",
+            "Strong understanding of algorithms and data structures.",
+            "Experience with cloud computing platforms (AWS, Azure)."
+        ]
+    },
+    {
+        "title": "IT Project Manager",
+        "company": "HP",
+        "location": "Palo Alto, CA",
+        "posted": "October 10, 2023",
+        "salary": "Salary: $100,000 - $130,000",
+        "category": "general",
+        "description": "As an IT Project Manager at HP, you will lead and coordinate large-scale IT projects from inception to completion, ensuring they are delivered on time and within budget.",
+        "responsibilities": [
+            "Develop project plans and timelines.",
+            "Coordinate cross-functional teams to deliver projects.",
+            "Manage project budgets and resources.",
+            "Identify and mitigate project risks.",
+            "Communicate project status to stakeholders."
+        ],
+        "requirements": [
+            "Bachelor's degree in IT, Business, or a related field.",
+            "5+ years of project management experience in IT.",
+            "PMP certification preferred.",
+            "Strong leadership and communication skills.",
+            "Experience with project management software."
+        ]
+    },
+    {
+        "title": "Database Administrator",
+        "company": "Oracle",
+        "location": "Redwood City, CA",
+        "posted": "October 10, 2024",
+        "salary": "Salary: $100,000 - $130,000",
+        "category": "general",
+        "description": "As a Database Administrator at Oracle, you will manage the integrity and availability of databases. You will ensure data security, perform backups, and collaborate with developers to optimize performance.",
+        "responsibilities": [
+            "Manage database backup and recovery processes.",
+            "Monitor database performance and implement performance tuning.",
+            "Ensure data integrity and security.",
+            "Implement and maintain database documentation.",
+            "Troubleshoot database issues and provide solutions."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "3+ years of experience as a Database Administrator.",
+            "Knowledge of SQL and database management software.",
+            "Experience with database backup and recovery best practices.",
+            "Strong problem-solving skills and attention to detail."
+        ]
+    },
+    {
+        "title": "Cybersecurity Specialist",
+        "company": "Google",
+        "location": "Mountain View, CA",
+        "posted": "July 5, 2024",
+        "salary": "Salary: $140,000 - $170,000",
+        "category": "general",
+        "description": "As a Cybersecurity Specialist at Google, you will protect our systems and data against threats. You will work with advanced security tools to safeguard the integrity and confidentiality of our services.",
+        "responsibilities": [
+            "Identify and address security vulnerabilities.",
+            "Implement security measures to protect IT infrastructure.",
+            "Monitor network activity for potential threats.",
+            "Conduct risk assessments and deploy security policies.",
+            "Collaborate with other teams to resolve security issues."
+        ],
+        "requirements": [
+            "Bachelor's degree in Cybersecurity or related field.",
+            "4+ years of experience in cybersecurity.",
+            "Knowledge of firewalls, VPNs, and IDS/IPS.",
+            "Proficiency in security tools and technologies.",
+            "Excellent problem-solving skills and attention to detail."
+        ]
+    },
+    {
+        "title": "Blockchain Developer",
+        "company": "IBM",
+        "location": "Armonk, NY",
+        "posted": "January 5, 2024",
+        "salary": "Salary: $120,000 - $140,000",
+        "category": "general",
+        "description": "As a Blockchain Developer at IBM, you will design, implement, and support a distributed blockchain-based network. You will be responsible for creating and maintaining smart contracts and developing tools for blockchain applications.",
+        "responsibilities": [
+            "Develop and manage blockchain architectures.",
+            "Create and deploy smart contracts.",
+            "Enhance and troubleshoot blockchain networks.",
+            "Collaborate with team members on project goals.",
+            "Write secure and efficient code."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "3+ years of experience in blockchain development.",
+            "Proficiency in Solidity and JavaScript.",
+            "Experience with Ethereum, Hyperledger, or similar platforms.",
+            "Strong problem-solving skills and attention to detail."
+        ]
+    },
+    {
+        "title": "AI Research Scientist",
+        "company": "Facebook",
+        "location": "Menlo Park, CA",
+        "posted": "September 15, 2024",
+        "salary": "Salary: $150,000 - $200,000",
+        "category": "general",
+        "description": "As an AI Research Scientist at Facebook, you will work on cutting-edge projects to advance artificial intelligence. You will collaborate with a team of top scientists and engineers to solve complex problems and contribute to the field of AI.",
+        "responsibilities": [
+            "Conduct research to advance AI theory and applications.",
+            "Develop novel AI algorithms and models.",
+            "Collaborate with cross-functional teams to apply AI solutions.",
+            "Publish research findings in top scientific conferences and journals.",
+            "Mentor junior researchers and interns."
+        ],
+        "requirements": [
+            "PhD in Computer Science, AI, or related field.",
+            "Strong publication record in AI research.",
+            "Proficiency in Python, TensorFlow, and PyTorch.",
+            "Excellent problem-solving skills and attention to detail.",
+            "Experience with large-scale machine learning systems."
+        ]
+    },
+    {
+        "title": "IT Consultant",
+        "company": "Accenture",
+        "location": "New York, NY",
+        "posted": "July 15, 2024",
+        "salary": "Salary: $90,000 - $120,000",
+        "category": "general",
+        "description": "As an IT Consultant at Accenture, you will assist businesses in making the best use of technology to achieve their goals. You'll be involved in improving business structures, advising on technology strategies, and ensuring effective IT project execution.",
+        "responsibilities": [
+            "Provide expert advice on IT infrastructure and solutions.",
+            "Analyze business requirements and recommend appropriate IT systems.",
+            "Ensure IT projects are delivered on time and within budget.",
+            "Conduct training sessions for IT staff and end-users.",
+            "Collaborate with clients to understand their specific needs."
+        ],
+        "requirements": [
+            "Bachelor's degree in Information Technology, Computer Science, or related field.",
+            "5+ years of experience in IT consulting.",
+            "Strong communication and project management skills.",
+            "Proficiency in various IT systems and software.",
+            "Ability to work under pressure and meet tight deadlines."
+        ]
+    },
+    {
+        "title": "Penetration Tester",
+        "company": "Amazon",
+        "location": "Seattle, WA",
+        "posted": "May 10, 2024",
+        "salary": "Salary: $110,000 - $140,000",
+        "category": "general",
+        "description": "As a Penetration Tester at Amazon, you will assess security systems and identify vulnerabilities. You will be responsible for performing regular penetration testing and working closely with the security team to safeguard our systems.",
+        "responsibilities": [
+            "Perform penetration testing on various systems and applications.",
+            "Identify and exploit vulnerabilities.",
+            "Document findings and recommend mitigation strategies.",
+            "Collaborate with the security team to improve defenses.",
+            "Stay updated on the latest security threats and tools."
+        ],
+        "requirements": [
+            "Bachelor's degree in Cybersecurity, Computer Science, or related field.",
+            "3+ years of experience in penetration testing.",
+            "Proficiency in using security tools.",
+            "Strong understanding of cybersecurity principles.",
+            "Relevant certifications are a plus (e.g., CEH, OSCP)."
+        ]
+    },
+    {
+        "title": "Big Data Engineer",
+        "company": "Microsoft",
+        "location": "Redmond, WA",
+        "posted": "April 10, 2024",
+        "salary": "Salary: $130,000 - $160,000",
+        "category": "general",
+        "description": "As a Big Data Engineer at Microsoft, you will design, build, and manage scalable data processing systems. You'll work on collecting, storing, processing, and analyzing huge sets of data, and ensure that the infrastructure is in place for a variety of data-driven applications.",
+        "responsibilities": [
+            "Develop and maintain scalable data pipelines and build out new API integrations.",
+            "Collaborate with cross-functional teams to gather requirements and deliver customized solutions.",
+            "Implement processes and systems to monitor data quality and ensure data integrity.",
+            "Perform complex data analysis to identify patterns and trends.",
+            "Bachelor's degree in Computer Science, Data Science, or related field."
+        ],
+        "requirements": [
+            "5+ years of experience in data engineering.",
+            "Proficiency with Hadoop, Spark, or similar big data technologies.",
+            "Experience with cloud data solutions like Azure, AWS, or GCP.",
+            "Excellent problem-solving skills and attention to detail."
+        ]
+    },
+    {
+        "title": "Technical Writer",
+        "company": "Oracle",
+        "location": "Redwood City, CA",
+        "posted": "October 15, 2024",
+        "salary": "Salary: $80,000 - $100,000",
+        "category": "general",
+        "description": "As a Technical Writer at Oracle, you will create clear and user-friendly documentation to help our customers understand and effectively use our products.",
+        "responsibilities": [
+            "Create and maintain documentation for Oracle products.",
+            "Collaborate with developers and product managers to gather information.",
+            "Ensure content is accurate, clear, and adheres to company standards.",
+            "Develop tutorials, user guides, and API documentation.",
+            "Collect feedback and update documentation accordingly."
+        ],
+        "requirements": [
+            "Bachelor's degree in English, Technical Writing, or related field.",
+            "2+ years of experience in technical writing.",
+            "Excellent written and verbal communication skills.",
+            "Familiarity with documentation tools such as MadCap Flare or Adobe FrameMaker.",
+            "Strong attention to detail and ability to explain complex information."
+        ]
+    },
+    {
+        "title": "Software Architect",
+        "company": "Netflix",
+        "location": "Los Gatos, CA",
+        "posted": "September 1, 2024",
+        "salary": "Salary: $160,000 - $190,000",
+        "category": "general",
+        "description": "As a Software Architect at Netflix, you will be responsible for designing scalable and complex software systems. You will take a leadership role in driving the architecture and design of software applications and collaborate closely with stakeholders to align technical strategies with business goals.",
+        "responsibilities": [
+            "Design and oversee architecture of software applications.",
+            "Collaborate with product managers and stakeholders to understand requirements.",
+            "Ensure software systems are scalable, secure, and maintainable.",
+            "Lead and mentor engineering teams on best practices.",
+            "Conduct architecture reviews and provide technical guidance."
+        ],
+        "requirements": [
+            "Bachelor's or Master's degree in Computer Science or related field.",
+            "7+ years of experience in software development and architecture.",
+            "Proficiency in cloud technologies and microservices architecture.",
+            "Strong problem-solving skills and attention to detail.",
+            "Excellent communication and leadership skills."
+        ]
+    },
+    {
+        "title": "Cloud Security Engineer",
+        "company": "Salesforce",
+        "location": "San Francisco, CA",
+        "posted": "September 10, 2024",
+        "salary": "Salary: $130,000 - $160,000",
+        "category": "general",
+        "description": "As a Cloud Security Engineer at Salesforce, you will ensure the security of our cloud infrastructure and applications. You will implement security measures and tools to protect the company's data and assets.",
+        "responsibilities": [
+            "Design and implement cloud security architectures.",
+            "Monitor and protect cloud environments.",
+            "Conduct security assessments and audits.",
+            "Respond to security incidents and breaches.",
+            "Collaborate with development teams to integrate security best practices."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "3+ years of experience in cloud security.",
+            "Proficiency with AWS, Azure, or GCP.",
+            "Strong knowledge of security protocols and best practices.",
+            "Excellent problem-solving and analytical skills."
+        ]
+    },
+    {
+        "title": "Embedded Systems Engineer",
+        "company": "Tesla",
+        "location": "Palo Alto, CA",
+        "posted": "September 10, 2024",
+        "salary": "Salary: $115,000 - $145,000",
+        "category": "general",
+        "description": "As an Embedded Systems Engineer at Tesla, you will design, develop, and optimize firmware for embedded systems used in our electric vehicles. You will work closely with hardware engineers to ensure seamless integration and functionality.",
+        "responsibilities": [
+            "Develop and maintain firmware for embedded systems.",
+            "Collaborate with hardware and software teams to integrate systems.",
+            "Perform system-level validation and debugging.",
+            "Ensure software meets performance and reliability standards.",
+            "Document design and development processes."
+        ],
+        "requirements": [
+            "Bachelor's degree in Electrical Engineering, Computer Engineering, or related field.",
+            "3+ years of experience in embedded systems development.",
+            "Proficiency in C/C++ programming.",
+            "Experience with real-time operating systems (RTOS).",
+            "Strong problem-solving skills and attention to detail."
+        ]
+    },
+    {
+        "title": "Robotics Engineer",
+        "company": "Boston Dynamics",
+        "location": "Waltham, MA",
+        "posted": "September 10, 2024",
+        "salary": "Salary: $120,000 - $160,000",
+        "category": "general",
+        "description": "As a Robotics Engineer at Boston Dynamics, you will design and develop cutting-edge robotic systems. You will be involved in creating advanced algorithms for autonomous navigation, manipulation, and control.",
+        "responsibilities": [
+            "Design and develop robotics software and hardware.",
+            "Implement algorithms for autonomous navigation and control.",
+            "Collaborate with cross-functional teams to integrate robotic systems.",
+            "Conduct simulations and experimental validations.",
+            "Troubleshoot and optimize robotic systems."
+        ],
+        "requirements": [
+            "Master's degree in Robotics, Computer Science, or related field.",
+            "5+ years of experience in robotics engineering.",
+            "Proficiency in C++, Python, and ROS.",
+            "Experience with machine learning algorithms.",
+            "Excellent problem-solving and analytical skills."
+        ]
+    },
+    {
+        "title": "Game Developer",
+        "company": "Electronic Arts",
+        "location": "Redwood City, CA",
+        "posted": "July 1, 2024",
+        "salary": "Salary: $100,000 - $130,000",
+        "category": "general",
+        "description": "As a Game Developer at Electronic Arts, you will create engaging video game experiences. You will work with a talented team to develop new game features and ensure a high-quality playing experience.",
+        "responsibilities": [
+            "Develop game features and systems.",
+            "Collaborate with other developers, artists, and designers.",
+            "Write clean and efficient code.",
+            "Participate in code reviews and maintain high coding standards.",
+            "Debug and troubleshoot game issues."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "3+ years of experience in game development.",
+            "Proficiency in C++ or C#.",
+            "Experience with game engines like Unity or Unreal Engine.",
+            "Strong problem-solving skills."
+        ]
+    },
+    {
+        "title": "Cloud Operations Engineer",
+        "company": "Amazon Web Services",
+        "location": "Seattle, WA",
+        "posted": "January 15, 2024",
+        "salary": "Salary: $120,000 - $140,000",
+        "category": "general",
+        "description": "As a Cloud Operations Engineer at AWS, you will manage cloud infrastructure, ensure smooth deployment processes, and optimize system performance.",
+        "responsibilities": [
+            "Monitor and maintain cloud infrastructure.",
+            "Implement automated deployment processes.",
+            "Optimize performance and troubleshoot issues.",
+            "Collaborate with development and support teams.",
+            "Ensure security and compliance standards are met."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "3+ years of experience with cloud platforms (AWS, Azure).",
+            "Proficiency in scripting languages (Python, Bash).",
+            "Experience with CI/CD tools (Jenkins, GitLab).",
+            "Strong problem-solving skills."
+        ]
+    },
+    {
+        "title": "Data Analyst",
+        "company": "Twitter",
+        "location": "San Francisco, CA",
+        "posted": "September 15, 2024",
+        "salary": "Salary: $90,000 - $110,000",
+        "category": "general",
+        "description": "As a Data Analyst at Twitter, you will analyze data sets to drive strategic decisions and improve company performance. Collaborate with cross-functional teams to ensure data accuracy and integrity.",
+        "responsibilities": [
+            "Analyze data to drive business insights.",
+            "Deliver clear and concise reports to stakeholders.",
+            "Collaborate with engineering and product teams.",
+            "Ensure data accuracy and integrity.",
+            "Create dashboards and visualizations."
+        ],
+        "requirements": [
+            "Bachelor's degree in Statistics, Mathematics, or related.",
+            "2+ years of experience in data analytics.",
+            "Proficiency in SQL, Excel, and data visualization tools.",
+            "Strong analytical and problem-solving skills.",
+            "Excellent communication skills."
+        ]
+    },
+    {
+        "title": "Systems Engineer",
+        "company": "Cisco",
+        "location": "San Jose, CA",
+        "posted": "March 15, 2024",
+        "salary": "Salary: $115,000 - $140,000",
+        "category": "general",
+        "description": "As a Systems Engineer at Cisco, you will design, implement, and maintain complex systems to meet business requirements. You will collaborate closely with various teams to ensure systems are optimized and secure.",
+        "responsibilities": [
+            "Design and deploy system solutions.",
+            "Monitor and optimize system performance.",
+            "Ensure system security and compliance.",
+            "Collaborate with cross-functional teams.",
+            "Maintain documentation and provide training."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "5+ years of experience in systems engineering.",
+            "Proficiency with Linux/Windows systems.",
+            "Knowledge of networking protocols and security.",
+            "Strong problem-solving skills."
+        ]
+    },
+    {
+        "title": "Network Administrator",
+        "company": "Palo Alto Networks",
+        "location": "Santa Clara, CA",
+        "posted": "October 1, 2024",
+        "salary": "Salary: $90,000 - $110,000",
+        "category": "general",
+        "description": "As a Network Administrator at Palo Alto Networks, you will manage, troubleshoot, and optimize the company's network infrastructure to ensure continuous, secure, and efficient operations.",
+        "responsibilities": [
+            "Manage and maintain network hardware and software.",
+            "Troubleshoot network connectivity issues.",
+            "Ensure network security and data protection.",
+            "Monitor network performance and implement enhancements.",
+            "Collaborate with IT team on network projects."
+        ],
+        "requirements": [
+            "Bachelor's degree in Information Technology or related field.",
+            "3+ years of experience in network administration.",
+            "Proficiency with network hardware (routers, switches, firewalls).",
+            "Experience with network monitoring and security tools.",
+            "Strong problem-solving and communication skills."
+        ]
+    },
+    {
+        "title": "IT Manager",
+        "company": "IBM",
+        "location": "Armonk, NY",
+        "posted": "September 2, 2024",
+        "salary": "Salary: $115,000 - $140,000",
+        "category": "general",
+        "description": "As an IT Manager at IBM, you will oversee the IT operations and lead the IT team. You will ensure the IT infrastructure is reliable, secure, and supports the organization's goals.",
+        "responsibilities": [
+            "Manage IT staff by recruiting, training, and coaching employees.",
+            "Oversee the IT department budget and ensuring cost-effectiveness.",
+            "Monitor performance and ensure system availability and reliability.",
+            "Develop IT policies and procedures.",
+            "Identify and act on opportunities to improve and update software and systems."
+        ],
+        "requirements": [
+            "Bachelor's degree in Information Technology or related field.",
+            "5+ years of experience in IT management.",
+            "Strong knowledge of IT systems and infrastructure.",
+            "Excellent leadership and decision-making skills.",
+            "Proficiency in managing budgets and project planning."
+        ]
+    },
+    {
+        "title": "Business Intelligence Developer",
+        "company": "SAP",
+        "location": "Newtown Square, PA",
+        "posted": "September 15, 2024",
+        "salary": "Salary: $100,000 - $130,000",
+        "category": "general",
+        "description": "As a Business Intelligence Developer at SAP, you will design, develop, and maintain BI solutions that empower our clients to make data-driven decisions. You will collaborate with business units to gather requirements and translate them into effective data models and reports.",
+        "responsibilities": [
+            "Develop and maintain BI solutions using SAP tools.",
+            "Gather requirements and create data models.",
+            "Generate reports and dashboards.",
+            "Ensure data accuracy and integrity.",
+            "Work with stakeholders to refine reporting needs."
+        ],
+        "requirements": [
+            "Bachelor's degree in Information Systems or related field.",
+            "3+ years of experience in BI development.",
+            "Proficiency in SQL and data modeling.",
+            "Experience with SAP BI tools.",
+            "Strong analytical and problem-solving skills."
+        ]
+    },
+    {
+        "title": "Java Developer",
+        "company": "Oracle",
+        "location": "Redwood City, CA",
+        "posted": "October 1, 2023",
+        "salary": "Salary: $100,000 - $130,000",
+        "category": "general",
+        "description": "As a Java Developer at Oracle, you will be responsible for developing and maintaining Java applications to meet business requirements. You will collaborate with a team of developers and product managers to ensure robust and scalable software solutions.",
+        "responsibilities": [
+            "Develop, test, and deploy Java applications.",
+            "Collaborate with cross-functional teams to define, design, and ship new features.",
+            "Troubleshoot and resolve technical issues.",
+            "Write clean and efficient code following best practices.",
+            "Participate in code reviews and ensure high-quality standards."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "3+ years of experience in Java development.",
+            "Strong understanding of object-oriented programming and design patterns.",
+            "Experience with relational databases and SQL.",
+            "Excellent problem-solving and communication skills."
+        ]
+    },
+    {
+        "title": "Software Development Engineer",
+        "company": "Google",
+        "location": "Mountain View, CA",
+        "posted": "June 10, 2024",
+        "salary": "Salary: $125,000 - $155,000",
+        "category": "general",
+        "description": "As a Software Development Engineer at Google, you will be part of a world-class engineering team to innovate and improve Google's services. You will focus on coding, development, and research to drive the company forward.",
+        "responsibilities": [
+            "Develop and implement software solutions.",
+            "Collaborate closely with cross-functional teams.",
+            "Ensure the software development cycle is followed and issues are resolved promptly.",
+            "Deliver high-quality code.",
+            "Participate in team code reviews."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "4+ years of software development experience.",
+            "Proficiency in Python, Java, or Go.",
+            "Experience with large-scale systems and cloud services.",
+            "Strong analytical and problem-solving skills."
+        ]
+    },
+    {
+        "title": "Senior Data Engineer",
+        "company": "LinkedIn",
+        "location": "Sunnyvale, CA",
+        "posted": "October 1, 2023",
+        "salary": "Salary: $140,000 - $170,000",
+        "category": "general",
+        "description": "As a Senior Data Engineer at LinkedIn, you will be responsible for designing, building, and maintaining scalable data pipelines. You will work closely with data scientists and analysts to support data-driven decision-making.",
+        "responsibilities": [
+            "Design and develop scalable ETL processes.",
+            "Maintain and optimize data storage solutions.",
+            "Collaborate with data scientists to ensure data quality and accessibility.",
+            "Support data governance and data security compliance.",
+            "Troubleshoot and resolve data-related issues."
+        ],
+        "requirements": [
+            "Bachelor's or Master's degree in Computer Science or related field.",
+            "5+ years of experience in data engineering.",
+            "Proficiency in SQL, Python, and ETL tools.",
+            "Experience with cloud platforms like AWS, GCP, or Azure.",
+            "Strong problem-solving and analytical skills."
+        ]
+    },
+    {
+        "title": "Web Designer",
+        "company": "Squarespace",
+        "location": "New York, NY",
+        "posted": "September 20, 2023",
+        "salary": "Salary: $85,000 - $105,000",
+        "category": "general",
+        "description": "As a Web Designer at Squarespace, you will create visually appealing and user-friendly web designs. Collaborate with developers, product managers, and other designers to ensure a seamless user experience.",
+        "responsibilities": [
+            "Create and maintain website designs in line with company branding.",
+            "Work closely with the development team to implement designs.",
+            "Ensure websites are optimized for mobile and desktop use.",
+            "Update and refine designs based on user feedback.",
+            "Stay updated with industry trends."
+        ],
+        "requirements": [
+            "Bachelor's degree in Graphic Design or related field.",
+            "2+ years of experience in web design.",
+            "Proficiency in HTML, CSS, and JavaScript.",
+            "Strong portfolio showcasing web design work.",
+            "Attention to detail and strong visual design skills."
+        ]
+    },
+    {
+        "title": "Digital Marketing Specialist",
+        "company": "HubSpot",
+        "location": "Cambridge, MA",
+        "posted": "October 18, 2023",
+        "salary": "Salary: $70,000 - $90,000",
+        "category": "general",
+        "description": "As a Digital Marketing Specialist at HubSpot, you will develop and implement online marketing strategies to drive engagement and conversions. You will work closely with the marketing team to launch campaigns and measure their performance.",
+        "responsibilities": [
+            "Create and manage digital marketing campaigns.",
+            "Optimize content for SEO and SEM.",
+            "Analyze campaign performance and adjust strategies as needed.",
+            "Collaborate with designers and product managers.",
+            "Monitor social media channels and web analytics tools."
+        ],
+        "requirements": [
+            "Bachelor's degree in Marketing or a related field.",
+            "2+ years of experience in digital marketing.",
+            "Proficiency in Google Analytics, AdWords, and social media platforms.",
+            "Strong copywriting and editing skills.",
+            "Analytical mindset and attention to detail."
+        ]
+    },
+    {
+        "title": "AI Engineer",
+        "company": "DeepMind",
+        "location": "London, UK",
+        "posted": "May 10, 2024",
+        "salary": "Salary: \u00a390,000 - \u00a3120,000",
+        "category": "general",
+        "description": "As an AI Engineer at DeepMind, you will be at the forefront of artificial intelligence research, building cutting-edge machine learning models. You will collaborate with researchers and engineers to develop innovative AI solutions.",
+        "responsibilities": [
+            "Design and build machine learning models and algorithms.",
+            "Collaborate with research scientists to implement AI solutions.",
+            "Analyze and improve the efficiency and performance of AI systems.",
+            "Deploy AI models to real-world applications.",
+            "Stay updated with the latest advancements in AI research."
+        ],
+        "requirements": [
+            "Master's or Ph.D. in Computer Science, Artificial Intelligence, or related field.",
+            "Experience in machine learning and deep learning frameworks such as TensorFlow or PyTorch.",
+            "Proficiency in Python and other relevant programming languages.",
+            "Strong problem-solving skills and analytical thinking.",
+            "Publication record in AI conferences or journals is a plus."
+        ]
+    },
+    {
+        "title": "Frontend Developer",
+        "company": "Shopify",
+        "location": "Toronto, ON",
+        "posted": "June 5, 2024",
+        "salary": "Salary: CAD 80,000 - CAD 110,000",
+        "category": "general",
+        "description": "As a Frontend Developer at Shopify, you will be responsible for creating visually appealing and user-friendly web interfaces. You will work with designers and backend developers to build seamless user experiences.",
+        "responsibilities": [
+            "Develop and maintain web applications using HTML, CSS, and JavaScript.",
+            "Collaborate with designers to implement responsive and engaging UI/UX.",
+            "Optimize web applications for performance and scalability.",
+            "Participate in code reviews and ensure adherence to coding standards.",
+            "Stay updated with the latest frontend development trends."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "3+ years of experience in frontend development.",
+            "Proficiency in JavaScript frameworks like React or Vue.js.",
+            "Excellent understanding of web markup, including HTML5 and CSS3.",
+            "Strong problem-solving skills and attention to detail."
+        ]
+    },
+    {
+        "title": "Backend Developer",
+        "company": "Stripe",
+        "location": "San Francisco, CA",
+        "posted": "April 20, 2024",
+        "salary": "Salary: $120,000 - $150,000",
+        "category": "general",
+        "description": "As a Backend Developer at Stripe, you will be responsible for building and maintaining server-side logic and APIs. You will work closely with frontend developers and product managers to deliver high-quality backend solutions.",
+        "responsibilities": [
+            "Design and implement scalable and robust backend services.",
+            "Collaborate with frontend developers to integrate user-facing elements.",
+            "Ensure data integrity and security.",
+            "Optimize server performance and troubleshoot issues.",
+            "Maintain and update existing backend systems."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "4+ years of experience in backend development.",
+            "Proficiency in programming languages like Python, Java, or Node.js.",
+            "Experience with database management systems (SQL, NoSQL).",
+            "Strong problem-solving skills and attention to detail."
+        ]
+    },
+    {
+        "title": "Data Engineer",
+        "company": "Dropbox",
+        "location": "San Francisco, CA",
+        "posted": "October 3, 2023",
+        "salary": "Salary: $130,000 - $160,000",
+        "category": "general",
+        "description": "As a Data Engineer at Dropbox, you will be responsible for building and maintaining scalable data pipelines that clean, process, and ingest structured and unstructured data. You will work closely with data scientists, analysts, and other engineering teams to ensure data availability and integrity.",
+        "responsibilities": [
+            "Design, develop, and maintain data pipelines & ETL processes.",
+            "Ensure data accuracy and availability for analytics and operational use cases.",
+            "Collaborate with data scientists and analysts to optimize data models and workflows.",
+            "Implement and manage data storage solutions, including databases and data lakes.",
+            "Monitor and troubleshoot data pipeline issues in real-time."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science, Engineering, or a related field.",
+            "3+ years of experience in data engineering or a related role.",
+            "Proficiency in Python, SQL, and ETL tools.",
+            "Experience with cloud platforms such as AWS, GCP, or Azure.",
+            "Strong problem-solving skills and attention to detail.",
+            "Excellent communication skills and the ability to work in a collaborative environment."
+        ]
+    },
+    {
+        "title": "Software Tester",
+        "company": "Atlassian",
+        "location": "Sydney, AU",
+        "posted": "March 15, 2024",
+        "salary": "Salary: AUD 70,000 - AUD 95,000",
+        "category": "general",
+        "description": "As a Software Tester at Atlassian, you will be responsible for ensuring the quality and reliability of our software products. You will work closely with developers and product managers to create and execute test plans.",
+        "responsibilities": [
+            "Create and execute test cases and test scripts.",
+            "Identify, document, and track software defects.",
+            "Collaborate with developers to resolve issues and improve software quality.",
+            "Conduct regression testing and performance testing.",
+            "Maintain test documentation and report test results."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "2+ years of experience in software testing or quality assurance.",
+            "Knowledge of test automation tools and frameworks.",
+            "Strong analytical and problem-solving skills.",
+            "Excellent communication and teamwork abilities."
+        ]
+    },
+    {
+        "title": "Game Designer",
+        "company": "Blizzard Entertainment",
+        "location": "Irvine, CA",
+        "posted": "September 10, 2024",
+        "salary": "Salary: $90,000 - $120,000",
+        "category": "general",
+        "description": "As a Game Designer at Blizzard Entertainment, you will be responsible for creating compelling game mechanics and immersive storylines. You will collaborate with artists, programmers, and other designers to create engaging gameplay experiences.",
+        "responsibilities": [
+            "Design and develop game mechanics and features.",
+            "Work with cross-functional teams to ensure gameplay quality.",
+            "Create and maintain design documentation.",
+            "Participate in playtesting and iterative design processes.",
+            "Analyze player feedback to improve game experience."
+        ],
+        "requirements": [
+            "Bachelor's degree in Game Design or related field.",
+            "2+ years of experience in game design.",
+            "Strong understanding of game mechanics and dynamics.",
+            "Proficiency with game design software (e.g., Unity, Unreal Engine).",
+            "Excellent communication and teamwork skills."
+        ]
+    },
+    {
+        "title": "IT Security Engineer",
+        "company": "FireEye",
+        "location": "Milpitas, CA",
+        "posted": "June 10, 2024",
+        "salary": "Salary: $110,000 - $140,000",
+        "category": "general",
+        "description": "As an IT Security Engineer at FireEye, you will be responsible for ensuring the security of our IT infrastructure and applications. You will work closely with other teams to implement security measures and respond to security incidents.",
+        "responsibilities": [
+            "Implement security measures and monitor for threats.",
+            "Conduct security assessments and vulnerability testing.",
+            "Develop and enforce security policies.",
+            "Investigate and respond to security incidents.",
+            "Stay updated on latest security trends and technologies."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "5+ years of experience in IT security.",
+            "Strong knowledge of network and application security.",
+            "Experience with security tools and technologies.",
+            "Excellent analytical and problem-solving skills."
+        ]
+    },
+    {
+        "title": "Systems Analyst",
+        "company": "Accenture",
+        "location": "Chicago, IL",
+        "posted": "July 11, 2024",
+        "salary": "Salary: $90,000 - $110,000",
+        "category": "general",
+        "description": "As a Systems Analyst at Accenture, you will analyze and improve existing systems and workflows. You will work with stakeholders to identify system requirements and design efficient solutions.",
+        "responsibilities": [
+            "Analyze system specifications and understand business requirements.",
+            "Develop system designs and specifications.",
+            "Monitor system performance and troubleshoot issues.",
+            "Collaborate with IT and business teams to ensure system efficiency.",
+            "Prepare technical documentation and user manuals."
+        ],
+        "requirements": [
+            "Bachelor's degree in Information Technology or related field.",
+            "3+ years of experience in system analysis and design.",
+            "Proficiency in system analysis tools and methodologies.",
+            "Strong analytical and problem-solving skills.",
+            "Excellent communication and teamwork abilities."
+        ]
+    },
+    {
+        "title": "IT Support Specialist",
+        "company": "Zendesk",
+        "location": "San Francisco, CA",
+        "posted": "April 5, 2024",
+        "salary": "Salary: $70,000 - $90,000",
+        "category": "general",
+        "description": "As an IT Support Specialist at Zendesk, you will be responsible for providing technical support to our employees. You will resolve hardware and software issues and ensure the smooth operation of our IT systems.",
+        "responsibilities": [
+            "Troubleshoot and resolve hardware and software issues.",
+            "Provide technical support to employees via phone, email, and in-person.",
+            "Install and configure computer systems and applications.",
+            "Maintain IT documentation and support logs.",
+            "Ensure security and compliance standards are met."
+        ],
+        "requirements": [
+            "Associate's or Bachelor's degree in Information Technology or related field.",
+            "2+ years of experience in IT support.",
+            "Proficiency in Windows and Mac operating systems.",
+            "Strong problem-solving and communication skills.",
+            "Experience with network troubleshooting."
+        ]
+    },
+    {
+        "title": "Technical Project Manager",
+        "company": "Google",
+        "location": "Mountain View, CA",
+        "posted": "October 5, 2024",
+        "salary": "Salary: $130,000 - $160,000",
+        "category": "general",
+        "description": "As a Technical Project Manager at Google, you will oversee the planning, execution, and completion of technical projects.",
+        "responsibilities": [
+            "Coordinate with cross-functional teams to ensure timely delivery of projects.",
+            "Manage project scope, timeline, and budget.",
+            "Identify and mitigate project risks.",
+            "Communicate project status to stakeholders.",
+            "Ensure adherence to project management best practices."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "5+ years of project management experience.",
+            "Strong knowledge of project management tools and methodologies.",
+            "Excellent communication and leadership skills.",
+            "PMP or similar certification is a plus."
+        ]
+    },
+    {
+        "title": "Infrastructure Engineer",
+        "company": "LinkedIn",
+        "location": "Sunnyvale, CA",
+        "posted": "September 2, 2024",
+        "salary": "Salary: $115,000 - $145,000",
+        "category": "general",
+        "description": "As an Infrastructure Engineer at LinkedIn, you will be responsible for designing and implementing infrastructure solutions to support our applications and services. You will ensure the scalability, reliability, and performance of our infrastructure.",
+        "responsibilities": [
+            "Design and maintain scalable infrastructure systems.",
+            "Implement security measures and monitor systems for potential vulnerabilities.",
+            "Collaborate with the engineering team to optimize performance.",
+            "Troubleshoot network and infrastructure issues.",
+            "Develop automation scripts and tools for system management."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science, Information Technology, or related field.",
+            "4+ years of experience in infrastructure engineering or a related role.",
+            "Proficiency with cloud platforms such as AWS, Azure, or GCP.",
+            "Experience with infrastructure as code (Terraform, Ansible).",
+            "Strong problem-solving skills and attention to detail."
+        ]
+    },
+    {
+        "title": "Cloud Consultant",
+        "company": "Salesforce",
+        "location": "San Francisco, CA",
+        "posted": "October 5, 2024",
+        "salary": "Salary: $110,000 - $140,000",
+        "category": "general",
+        "description": "As a Cloud Consultant at Salesforce, you will be responsible for providing expert advice and solutions for cloud-based systems. You will work closely with clients to ensure their cloud environments are optimized and secure.",
+        "responsibilities": [
+            "Assess client cloud environments and provide recommendations.",
+            "Design and implement cloud solutions.",
+            "Collaborate with sales and technical teams.",
+            "Conduct performance tuning and optimization.",
+            "Ensure cloud security and compliance."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "5+ years of experience in cloud consulting.",
+            "Proficiency with AWS, Azure, or GCP.",
+            "Strong analytical and problem-solving skills.",
+            "Excellent communication and client management skills."
+        ]
+    },
+    {
+        "title": "QA Tester",
+        "company": "HP",
+        "location": "Palo Alto, CA",
+        "posted": "September 12, 2024",
+        "salary": "Salary: $70,000 - $90,000",
+        "category": "general",
+        "description": "As a QA Tester at HP, you will be responsible for ensuring the quality and reliability of our software products. You will create test plans, execute test cases, and report issues to ensure that our products meet the highest standards.",
+        "responsibilities": [
+            "Create detailed, comprehensive, and well-structured test plans and test cases.",
+            "Execute manual and automated tests to identify issues.",
+            "Document and report bugs and errors to development teams.",
+            "Conduct post-release/post-implementation testing.",
+            "Collaborate with cross-functional teams to ensure quality throughout the software development lifecycle."
+        ],
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "2+ years of experience in software testing.",
+            "Proficiency in test management software (e.g., JIRA, TestRail).",
+            "Experience with automated testing tools (e.g., Selenium, QTP).",
+            "Strong analytical and problem-solving skills."
+        ]
+    },
+    {
+        "title": "Integration Specialist",
+        "company": "SAP",
+        "location": "Newtown Square, PA",
+        "posted": "October 1, 2024",
+        "salary": "Salary: $90,000 - $120,000",
+        "category": "general",
+        "description": "As an Integration Specialist at SAP, you will be responsible for developing and implementing system integration solutions. Your role will involve working with clients to understand their business requirements and ensure seamless integration of various software systems.",
+        "responsibilities": [
+            "Analyze business requirements and design integration solutions.",
+            "Implement integration strategies with multiple systems.",
+            "Collaborate with stakeholders to identify integration needs.",
+            "Develop and maintain integration documentation.",
+            "Troubleshoot and resolve integration issues."
+        ],
+        "requirements": [
+            "Bachelor's degree in Information Technology, Computer Science, or related field.",
+            "5+ years of experience in system integration.",
+            "Proficiency in integration tools and technologies (e.g., MuleSoft, Dell Boomi).",
+            "Strong problem-solving skills and attention to detail.",
+            "Excellent communication and interpersonal skills."
+        ]
+    },
+    {
+        "title": "Application Support Analyst",
+        "company": "Dell",
+        "location": "Round Rock, TX",
+        "posted": "October 10, 2023",
+        "salary": "Salary: $70,000 - $90,000",
+        "category": "general",
+        "description": "As an Application Support Analyst at Dell, you will provide technical support for our software applications and systems. You will troubleshoot issues, provide solutions to users, and ensure smooth operation of the applications.",
+        "responsibilities": [
+            "Troubleshoot application issues and provide timely resolution.",
+            "Coordinate with development teams to address bugs and enhancements.",
+            "Document support activities and resolutions.",
+            "Provide training and support to end-users.",
+            "Monitor application performance and implement improvements."
+        ],
+        "requirements": [
+            "Bachelor's degree in Information Technology or a related field.",
+            "3+ years of experience in application support.",
+            "Strong knowledge of SQL and database management.",
+            "Excellent problem-solving and communication skills.",
+            "Experience with incident management tools."
+        ]
+    },
+    {
+        "title": "IoT Engineer",
+        "company": "Tesla",
+        "location": "Palo Alto, CA",
+        "posted": "October 20, 2024",
+        "salary": "Salary: $130,000 - $160,000",
+        "category": "general",
+        "description": "As an IoT Engineer at Tesla, you will be responsible for designing, developing, and maintaining IoT systems to enhance our products' connectivity and efficiency. You will work with a team of engineers to create innovative IoT solutions that integrate seamlessly with Tesla's ecosystem.",
+        "responsibilities": [
+            "Design and develop IoT applications and systems.",
+            "Integrate IoT devices with cloud platforms and services.",
+            "Collaborate with cross-functional teams to define system requirements.",
+            "Ensure the security and scalability of IoT systems.",
+            "Monitor and maintain IoT devices and networks."
+        ],
+        "requirements": [
+            "Troubleshoot and debug IoT-related issues.",
+            "Bachelor's degree in Computer Science, Electrical Engineering, or related field.",
+            "4+ years of experience in IoT development.",
+            "Proficiency in programming languages such as C, C++, Python, or JavaScript.",
+            "Experience with IoT platforms and protocols (e.g., MQTT, CoAP).",
+            "Knowledge of cloud services (AWS IoT, Azure IoT, or similar).",
+            "Strong problem-solving skills and attention to detail.",
+            "Excellent communication and team collaboration skills."
+        ]
+    }
+]

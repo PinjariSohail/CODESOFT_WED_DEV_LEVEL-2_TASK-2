@@ -1,0 +1,344 @@
+[
+    {
+        "title": "Software Engineer",
+        "company": "Google",
+        "location": "Mountain View, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Data Scientist",
+        "company": "Amazon",
+        "location": "Seattle, WA",
+        "category": "data-science"
+    },
+    {
+        "title": "Web Developer",
+        "company": "Facebook",
+        "location": "Menlo Park, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Product Manager",
+        "company": "Apple",
+        "location": "Cupertino, CA",
+        "category": "management"
+    },
+    {
+        "title": "UI/UX Designer",
+        "company": "Microsoft",
+        "location": "Redmond, WA",
+        "category": "design"
+    },
+    {
+        "title": "DevOps Engineer",
+        "company": "Netflix",
+        "location": "Los Gatos, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Mobile App Developer",
+        "company": "Uber",
+        "location": "San Francisco, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "System Administrator",
+        "company": "IBM",
+        "location": "Armonk, NY",
+        "category": "support"
+    },
+    {
+        "title": "Network Engineer",
+        "company": "Cisco",
+        "location": "San Jose, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Cloud Architect",
+        "company": "Oracle",
+        "location": "Redwood City, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Security Analyst",
+        "company": "Symantec",
+        "location": "Mountain View, CA",
+        "category": "support"
+    },
+    {
+        "title": "Full Stack Developer",
+        "company": "Salesforce",
+        "location": "San Francisco, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "QA Engineer",
+        "company": "Adobe",
+        "location": "San Jose, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Technical Support Specialist",
+        "company": "Dell",
+        "location": "Round Rock, TX",
+        "category": "support"
+    },
+    {
+        "title": "Business Analyst",
+        "company": "Intel",
+        "location": "Santa Clara, CA",
+        "category": "management"
+    },
+    {
+        "title": "Machine Learning Engineer",
+        "company": "Nvidia",
+        "location": "Santa Clara, CA",
+        "category": "data-science"
+    },
+    {
+        "title": "IT Project Manager",
+        "company": "HP",
+        "location": "Palo Alto, CA",
+        "category": "management"
+    },
+    {
+        "title": "Database Administrator",
+        "company": "Oracle",
+        "location": "Redwood City, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Cybersecurity Specialist",
+        "company": "Google",
+        "location": "Mountain View, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Blockchain Developer",
+        "company": "IBM",
+        "location": "Armonk, NY",
+        "category": "engineering"
+    },
+    {
+        "title": "AI Research Scientist",
+        "company": "Facebook",
+        "location": "Menlo Park, CA",
+        "category": "data-science"
+    },
+    {
+        "title": "IT Consultant",
+        "company": "Accenture",
+        "location": "New York, NY",
+        "category": "consulting"
+    },
+    {
+        "title": "Penetration Tester",
+        "company": "Amazon",
+        "location": "Seattle, WA",
+        "category": "engineering"
+    },
+    {
+        "title": "Big Data Engineer",
+        "company": "Microsoft",
+        "location": "Redmond, WA",
+        "category": "data-science"
+    },
+    {
+        "title": "Technical Writer",
+        "company": "Oracle",
+        "location": "Redwood City, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Software Architect",
+        "company": "Netflix",
+        "location": "Los Gatos, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Cloud Security Engineer",
+        "company": "Salesforce",
+        "location": "San Francisco, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Embedded Systems Engineer",
+        "company": "Tesla",
+        "location": "Palo Alto, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Robotics Engineer",
+        "company": "Boston Dynamics",
+        "location": "Waltham, MA",
+        "category": "engineering"
+    },
+    {
+        "title": "Game Developer",
+        "company": "Electronic Arts",
+        "location": "Redwood City, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Cloud Operations Engineer",
+        "company": "Amazon Web Services",
+        "location": "Seattle, WA",
+        "category": "engineering"
+    },
+    {
+        "title": "Data Analyst",
+        "company": "Twitter",
+        "location": "San Francisco, CA",
+        "category": "data-science"
+    },
+    {
+        "title": "Systems Engineer",
+        "company": "Cisco",
+        "location": "San Jose, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Network Administrator",
+        "company": "Palo Alto Networks",
+        "location": "Santa Clara, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "IT Manager",
+        "company": "IBM",
+        "location": "Armonk, NY",
+        "category": "management"
+    },
+    {
+        "title": "Business Intelligence Developer",
+        "company": "SAP",
+        "location": "Newtown Square, PA",
+        "category": "data-science"
+    },
+    {
+        "title": "Java Developer",
+        "company": "Oracle",
+        "location": "Redwood City, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Software Development Engineer",
+        "company": "Google",
+        "location": "Mountain View, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Senior Data Engineer",
+        "company": "LinkedIn",
+        "location": "Sunnyvale, CA",
+        "category": "data-science"
+    },
+    {
+        "title": "Web Designer",
+        "company": "Squarespace",
+        "location": "New York, NY",
+        "category": "design"
+    },
+    {
+        "title": "Digital Marketing Specialist",
+        "company": "HubSpot",
+        "location": "Cambridge, MA",
+        "category": "marketing"
+    },
+    {
+        "title": "AI Engineer",
+        "company": "DeepMind",
+        "location": "London, UK",
+        "category": "engineering"
+    },
+    {
+        "title": "Frontend Developer",
+        "company": "Shopify",
+        "location": "Toronto, ON",
+        "category": "engineering"
+    },
+    {
+        "title": "Backend Developer",
+        "company": "Stripe",
+        "location": "San Francisco, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Data Engineer",
+        "company": "Dropbox",
+        "location": "San Francisco, CA",
+        "category": "data-science"
+    },
+    {
+        "title": "Software Tester",
+        "company": "Atlassian",
+        "location": "Sydney, AU",
+        "category": "engineering"
+    },
+    {
+        "title": "Game Designer",
+        "company": "Blizzard Entertainment",
+        "location": "Irvine, CA",
+        "category": "design"
+    },
+    {
+        "title": "IT Security Engineer",
+        "company": "FireEye",
+        "location": "Milpitas, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Systems Analyst",
+        "company": "Accenture",
+        "location": "Chicago, IL",
+        "category": "consulting"
+    },
+    {
+        "title": "IT Support Specialist",
+        "company": "Zendesk",
+        "location": "San Francisco, CA",
+        "category": "support"
+    },
+    {
+        "title": "Technical Project Manager",
+        "company": "Google",
+        "location": "Mountain View, CA",
+        "category": "management"
+    },
+    {
+        "title": "Infrastructure Engineer",
+        "company": "LinkedIn",
+        "location": "Sunnyvale, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Cloud Consultant",
+        "company": "Salesforce",
+        "location": "San Francisco, CA",
+        "category": "consulting"
+    },
+    {
+        "title": "QA Tester",
+        "company": "HP",
+        "location": "Palo Alto, CA",
+        "category": "engineering"
+    },
+    {
+        "title": "Integration Specialist",
+        "company": "SAP",
+        "location": "Newtown Square, PA",
+        "category": "consulting"
+    },
+    {
+        "title": "Application Support Analyst",
+        "company": "Dell",
+        "location": "Round Rock, TX",
+        "category": "support"
+    },
+    {
+        "title": "IoT Engineer",
+        "company": "Tesla",
+        "location": "Palo Alto, CA",
+        "category": "engineering"
+    }
+]

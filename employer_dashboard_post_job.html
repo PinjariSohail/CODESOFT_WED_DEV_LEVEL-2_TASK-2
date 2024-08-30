@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="static/" />
+  <title>Post a Job Opening</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #8a9faf;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 20px 20px 60px #e0dddd94,
+                  -20px -20px 60px #e0dddd94;
+      padding: 40px;
+      width: 800px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    input[type="text"],
+    textarea,
+    input[type="number"] {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: none;
+      background: #cac8c8bf;
+      box-shadow: inset 5px 5px 10px #e8e3e3f7,
+                  inset -5px -5px 10px #ffffffae;
+      font-size: 16px;
+    }
+
+    input[type="text"]:focus,
+    textarea:focus,
+    input[type="number"]:focus {
+      outline: none;
+      box-shadow: inset 2px 2px 5px #dad6d6,
+                  inset -2px -2px 5px #ffffffae;
+    }
+
+    textarea {
+      height: 150px;
+    }
+
+    button {
+      background: #3498db;
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background 0.3s;
+      box-shadow: 5px 5px 10px #09090997,
+                  -5px -5px 10px #ffffffe4;
+    }
+
+    button:hover {
+      background: #2980b9;
+    }
+
+    .container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="cursor"></div>
+    <h2>Post a Job Opening</h2>
+    <form action="/submit-job" method="POST">
+      <input type="text" name="companyName" placeholder="Company Name" required>
+      <input type="text" name="jobTitle" placeholder="Job Title" required>
+      <textarea name="requirements" placeholder="Requirements" required></textarea>
+      <textarea name="responsibilities" placeholder="Responsibilities" required></textarea>
+      <input type="text" name="workingTime" placeholder="Working Time (e.g., 9:00 AM - 5:00 PM)" required>
+      <input type="date" name="startDate" placeholder="Start Date" required>
+      <input type="number" name="salary" placeholder="Salary (USD)" required>
+      <button type="submit">Post Job</button>
+    </form>
+  </div>
+  <script>
+    const cursor = document.getElementById("cursor");
+      let mouseX = 0,
+        mouseY = 0;
+      let currentX = 0,
+        currentY = 0;
+      const speed = 0.1;
+
+      document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+
+      function updateCursor() {
+        currentX += (mouseX - currentX) * speed;
+        currentY += (mouseY - currentY) * speed;
+        cursor.style.left = `${currentX}px`;
+        cursor.style.top = `${currentY}px`;
+        requestAnimationFrame(updateCursor);
+      }
+
+      requestAnimationFrame(updateCursor);
+  </script>
+</body>
+</html>
