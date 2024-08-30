@@ -52,17 +52,7 @@
         transform: translate(-50%, -50%);
       }
 
-      .forms-wrap {
-        position: absolute;
-        height: 100%;
-        width: 45%;
-        top: 0;
-        left: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        transition: 0.8s ease-in-out;
-      }
+     
 
       form {
         max-width: 260px;
@@ -82,15 +72,7 @@
         pointer-events: none;
       }
 
-      .logo {
-        display: flex;
-        align-items: center;
-      }
-
-      .logo img {
-        width: 27px;
-        margin-right: 0.3rem;
-      }
+      
 
       .logo h4 {
         font-size: 1.1rem;
@@ -105,20 +87,7 @@
         color: #000000;
       }
 
-      .heading h6 {
-        color: #685a5a;
-        font-weight: 400;
-        font-size: 0.75rem;
-        display: inline;
-      }
-
-      .toggle {
-        color: #151111;
-        text-decoration: none;
-        font-size: 0.75rem;
-        font-weight: 500;
-        transition: 0.3s;
-      }
+    
 
       .toggle:hover {
         color: #5039e8;
@@ -178,23 +147,7 @@
         transition: 0.3s;
       }
 
-      .sign-btn:hover {
-        background-color: #0e49de;
-      }
-
-      .text {
-        color: #7a6f6f;
-        font-size: 0.7rem;
-      }
-
-      .text a {
-        color: #665959;
-        transition: 0.3s;
-      }
-
-      .text a:hover {
-        color: #725df8;
-      }
+     
 
       main.sign-up-mode form.sign-in-form {
         opacity: 0;
@@ -229,11 +182,7 @@
         transition: 0.8s ease-in-out;
       }
 
-      .images-wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-      }
+  
 
       .image {
         width: 100%;
@@ -255,17 +204,8 @@
         transform: scale(0.3) rotate(-20deg);
       }
 
-      .image.show {
-        opacity: 1;
-        transform: none;
-      }
-
-      .text-slider {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-      }
+     
+      
 
       .text-wrap {
         max-height: 2.2rem;
@@ -304,12 +244,7 @@
         transition: 0.3s;
       }
 
-      .bullets span.active {
-        width: 1.1rem;
-        background-color: #151111;
-        border-radius: 1rem;
-      }
-
+    
       @media (max-width: 850px) {
         .box {
           height: auto;
@@ -361,14 +296,7 @@
           display: flex;
         }
 
-        .images-wrapper {
-          display: none;
-        }
-
-        .text-slider {
-          width: 100%;
-        }
-      }
+        
 
       @media (max-width: 530px) {
         main {
@@ -423,15 +351,7 @@
         object-fit: contain;
       }
 
-      @keyframes rotating {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-
+     
       @keyframes click-animation {
         0% {
           transform: scale(1);
@@ -505,21 +425,7 @@
             </form>
 
             <form
-              action="/signup"
-              method="POST"
-              autocomplete="off"
-              class="sign-up-form"
-            >
-              <div class="logo">
-                
-                <h4>JobSeeker</h4>
-              </div>
-
-              <div class="heading">
-                <h2>Get Started</h2>
-                <h6>Already have an account?</h6>
-                <a href="#" class="toggle">Sign in</a>
-              </div>
+         
 
               <div class="actual-form">
                 <div class="input-wrap">
@@ -607,12 +513,7 @@
         </div>
       </div>
     </main>
-    <script>
-      const inputs = document.querySelectorAll(".input-field");
-      const toggle_btn = document.querySelectorAll(".toggle");
-      const main = document.querySelector("main");
-      const bullets = document.querySelectorAll(".bullets span");
-      const images = document.querySelectorAll(".image");
+
 
       inputs.forEach((inp) => {
         inp.addEventListener("focus", () => {
@@ -651,12 +552,7 @@
     <script>
       const cursor = document.querySelector(".loading-cursor");
       document.addEventListener("mousemove", (e) => {
-        const cursorWidth = cursor.offsetWidth / 2;
-        const cursorHeight = cursor.offsetHeight / 2;
-
-        cursor.style.left = `${e.clientX - cursorWidth}px`;
-        cursor.style.top = `${e.clientY - cursorHeight}px`;
-      });
+     
 
       document.addEventListener("mousedown", () => {
         cursor.style.animation = "click-animation 0.5s";
