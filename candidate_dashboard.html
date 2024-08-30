@@ -29,10 +29,6 @@
 
     .profile-picture {
       border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      margin-bottom: 20px;
       box-shadow: 5px 5px 10px #494b4fd8, -5px -5px 10px #ffffffc0;
     }
 
@@ -42,23 +38,12 @@
       margin-bottom: 20px;
     }
 
-    p {
-      font-size: 16px;
-      color: #666;
-    }
-
-    .options {
-      margin-top: 30px;
-    }
-
+  
     .options button {
       background-color: #29388b;
       border: none;
       padding: 10px 20px;
       margin: 10px;
-      border-radius: 10px;
-      box-shadow: 3px 3px 8px #4c5578, -3px -3px 8px #ffffffd2;
-      font-size: 14px;
       color: #ffffff;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -84,10 +69,6 @@
   <script>
     fetch('/get-latest-candidate')
       .then(response => response.json())
-      .then(data => {
-        const candidateNameElement = document.getElementById('candidate-name');
-        candidateNameElement.textContent = `Welcome, ${data.name}`;
-      })
       .catch(error => console.error('Error fetching candidate name:', error));
   </script>
 </body>
