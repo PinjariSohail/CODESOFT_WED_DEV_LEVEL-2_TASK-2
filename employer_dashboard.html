@@ -19,10 +19,7 @@
         .dashboard {
             background: #b8dad8;
             border-radius: 20px;
-            box-shadow: 20px 20px 60px #312f2f98, -20px -20px 60px #ffffffbc;
-            padding: 40px;
-            width: 80%;
-            max-width: 800px;
+
             text-align: center;
         }
 
@@ -44,10 +41,6 @@
             display: inline-block;
             padding: 10px 20px;
             background: #3498db;
-            color: #fff;
-            border-radius: 10px;
-            text-decoration: none;
-            font-size: 18px;
             transition: background 0.3s;
             box-shadow: 5px 5px 10px #52515195, -5px -5px 10px #ffffffb4;
             margin-top: 20px;
@@ -78,11 +71,6 @@
     <script>
         const cursor = document.getElementById("cursor");
       let mouseX = 0,
-        mouseY = 0;
-      let currentX = 0,
-        currentY = 0;
-      const speed = 0.1;
-
       document.addEventListener("mousemove", (e) => {
         mouseX = e.clientX;
         mouseY = e.clientY;
